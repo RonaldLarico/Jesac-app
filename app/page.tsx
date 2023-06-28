@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Banner from "@/components/Banner";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-      <div className='bg-red-500'>
-        <p className='text-3xl bg-rose-500'>
-          Hello World!!!
-          </p>
-         </div>
-  )
+    <main>
+      <div className="w-full bg-banner-bg bg-center">
+        <div className="w-full bg-black opacity-80 text-white">
+          <Navbar />
+          <Banner />
+        </div>
+      </div>
+    </main>
+  );
 }
