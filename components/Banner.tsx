@@ -16,7 +16,7 @@ const Banner = () => {
   });
   return (
     <div className="h-96 max-w-screen-2xl mx-auto flex flex-col justify-center items-center">
-      <h1 className="text-2xl md:text-4xl uppercase font-bold">
+      <h1 className="dark:text-purple-600 text-cyan-500 text-2xl md:text-4xl uppercase font-bold">
         SHOPPERS ONLINE SHOPPING
       </h1>
       <p className="text-base md:text-lg font-semibold mt-2">

@@ -7,6 +7,8 @@ import { BsSearch } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import { TiThMenu } from "react-icons/ti";
 
+import DarkMode from './darkMode/Index'
+
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
@@ -67,7 +69,12 @@ function NavBar() {
                     Contacto
                   </Link>
                 </li>
-                <li className="text-white hover:text-green-700 py-6 pl-35 lg:pl-20 text-center hover:bg-cyan-600  border-cyan-600  md:hover:text-green-600 md:hover:bg-transparent">
+                <li className='py-6 px-2 border-b-2 md:border-b-0 text-center cursor-pointer hover:scale-125 ease-in duration-300 border-cyan-600'>
+                  <Link href="#home" onClick={() => setNavbar(!navbar)}>
+                  <DarkMode />
+                  </Link>
+                </li>
+                <li className="text-white hover:text-green-700 py-6 pl-35 lg:pl-6 text-center hover:bg-cyan-600  border-cyan-600  md:hover:text-green-600 md:hover:bg-transparent">
                   <button className="bg-green-700 hover:bg-white py-1 px-6 rounded-xl text-base uppercase font-bold">
                     SOFTWARE
                   </button>

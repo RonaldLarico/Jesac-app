@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <div className="w-full bg-banner-bg bg-center">
-        <div className="w-full bg-black opacity-80 text-white">
+        <div className="w-full">
           <Navbar />
           <Banner />
         </div>
