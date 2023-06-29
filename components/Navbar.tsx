@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import { BsSearch } from "react-icons/bs";
 import { ImCross } from "react-icons/im";
 import { TiThMenu } from "react-icons/ti";
 
@@ -13,7 +12,7 @@ function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full border-b-[1px] lg:bg-cyan-700/50 bg-cyan-700/95 z-10">
+      <nav className="w-full border-b-[1px] lg:bg-purple-700/50 bg-purple-700/95 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
