@@ -31,6 +31,13 @@ const Banner = () => {
   });
   return (
     <section id="home" className="lg:w-[1280px] mx-auto md:w-auto">
+      <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[24%] lg:left-[20%] lg:w-52 w-44'></img>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[45%] top-56'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-96 top-3/4'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-1/2 top-[60%]'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/>
     <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px] h-96 text-center justify-center items-center mx-auto">
       <div className="lg:text-8xl text-7xl mt-10">
         <h2 className="font-bold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">

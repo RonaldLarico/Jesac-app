@@ -1,0 +1,34 @@
+
+.bottomNav {
+    @apply fixed right-12 top-10 h-14 w-0 translate-x-[50%] duration-500 bg-gray-100 p-3 rounded-md
+    transition-[width,right] delay-[1s,2.5s];
+}
+
+.controlBtn{
+    @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]
+    cursor-pointer h-16 w-16 bg-cyan-600 duration-300 flex items-center justify-center rounded-full;
+}
+
+.bottomNav:has(#check:checked) {
+    @apply right-[50%] translate-x-[50%] w-96 transition-[width,right] delay-[1s,0s] duration-500;
+}
+
+.open {
+    @apply duration-300 delay-[2s];
+}
+
+#check:checked + close {
+    @apply -rotate-[135deg] delay-[2s];
+}
+
+.controlBtn:has(#check:checked) {
+    @apply top-0 delay-[3s] bg-rose-600 shadow-lg shadow-rose-600;
+}
+
+ .icon {
+    @apply cursor-pointer;
+ }
+
+.icon:hover{
+    @apply -translate-y-1 scale-110;
+}

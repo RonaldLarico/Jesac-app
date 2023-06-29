@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -87,5 +87,53 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBar; */
 
+"use client";
+import React from 'react'
+import Image from 'next/image';
+import style from './Style.module.css'
+import { useState } from 'react';
+
+const Navbar = () => {
+
+  const [ open, setOpen ] = useState(false);
+
+  return (
+    <div className={`${style.bottomNav} grid grid-cols-2 gap-16`} onClick={() => setOpen(!open)} >
+      <div className="text-2xl flex items-center gap-6 justify-center">
+        <img src='/Ellipse.png' id={`${style.icon}`}/>
+        <img src='/Ellipse.png' />
+      </div>
+      <div className="text-2xl flex items-center gap-6 justify-center">
+        <img src='/Ellipse.png' />
+        <img src='/Ellipse.png' />
+      </div>
+      <label className={`${style.controlBtn}`}>
+        <input
+        type='checkbox'
+        name='check'
+        className='appearance-none'
+        id={`${style.check}`}/>
+          {open ? (
+
+          <Image
+          src='/close.svg'
+          alt='close'
+          width={30}
+          height={30}
+          id={`${style.close}`}
+          className='bi bi-plus-lg'
+          />
+            ) : (
+            <Image src='/open.svg' alt='open' width={30} height={30} id='open' />
+            )}
+
+
+
+      </label>
+    </div>
+  )
+}
+
+export default Navbar

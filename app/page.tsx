@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function Home() {
   return (
