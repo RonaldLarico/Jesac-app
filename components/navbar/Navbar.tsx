@@ -1,4 +1,4 @@
-/* "use client";
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -6,13 +6,13 @@ import { useState } from 'react';
 import { ImCross } from "react-icons/im";
 import { TiThMenu } from "react-icons/ti";
 
-import DarkMode from './darkMode/Index'
+import DarkMode from '../darkMode/Index'
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div>
-      <nav className="w-full border-b-[1px] lg:bg-purple-700/50 bg-purple-700/95 z-10">
+    <div className='container'>
+      <nav className="w-full border-b-[1px] lg:bg-purple-700/50 bg-purple-700/50 lg:fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -87,53 +87,4 @@ function NavBar() {
   );
 }
 
-export default NavBar; */
-
-"use client";
-import React from 'react'
-import Image from 'next/image';
-import style from './Style.module.css'
-import { useState } from 'react';
-
-const Navbar = () => {
-
-  const [ open, setOpen ] = useState(false);
-
-  return (
-    <div className={`${style.bottomNav} grid grid-cols-2 gap-16`} onClick={() => setOpen(!open)} >
-      <div className="text-2xl flex items-center gap-6 justify-center">
-        <img src='/Ellipse.png' id={`${style.icon}`}/>
-        <img src='/Ellipse.png' />
-      </div>
-      <div className="text-2xl flex items-center gap-6 justify-center">
-        <img src='/Ellipse.png' />
-        <img src='/Ellipse.png' />
-      </div>
-      <label className={`${style.controlBtn}`}>
-        <input
-        type='checkbox'
-        name='check'
-        className='appearance-none'
-        id={`${style.check}`}/>
-          {open ? (
-
-          <Image
-          src='/close.svg'
-          alt='close'
-          width={30}
-          height={30}
-          id={`${style.close}`}
-          className='bi bi-plus-lg'
-          />
-            ) : (
-            <Image src='/open.svg' alt='open' width={30} height={30} id='open' />
-            )}
-
-
-
-      </label>
-    </div>
-  )
-}
-
-export default Navbar
+export default NavBar;

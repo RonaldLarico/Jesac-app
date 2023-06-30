@@ -13,8 +13,8 @@ const Banner = () => {
       "SOFTWARE",
     ],
     loop: true,
-    typeSpeed: 20,
-    deleteSpeed: 20,
+    typeSpeed: 10,
+    deleteSpeed: 10,
     delaySpeed: 2000,
   });
 
@@ -25,20 +25,22 @@ const Banner = () => {
       "Desarrollo de software a medida.",
     ],
     loop: true,
-    typeSpeed: 40,
-    deleteSpeed: 20,
+    typeSpeed: 30,
+    deleteSpeed: 30,
     delaySpeed: 2000,
   });
   return (
-    <section id="home" className="lg:w-[1280px] mx-auto md:w-auto">
-      <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[24%] lg:left-[20%] lg:w-52 w-44'></img>
+    <section id="home" className="container flex items-center justify-center lg:w-[1280px] mx-auto md:w-auto">
+      <img src='/wave.svg' className='absolute lg:bottom-0 bottom-[-110px] w-[100%] mix-blend-overlay'/>
+      <img src='/waveServices.svg' className='absolute lg:top-20 top-[70px] w-[100%] mix-blend-overlay'/>
+      <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[10%] lg:left-[20%] lg:w-52 w-20'></img>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[45%] top-56'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-96 top-3/4'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-1/2 top-[60%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/>
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px] h-96 text-center justify-center items-center mx-auto">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px] h-96 text-center justify-center items-center mx-auto mt-20">
       <div className="lg:text-8xl text-7xl mt-10">
         <h2 className="font-bold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">
       <p className="font-mono font-bold text-center dark:text-white text-black md:text-2xl text-xl lg:text-3xl">
@@ -59,7 +61,7 @@ const Banner = () => {
         width={500}
         height={500}
         alt='icon'
-        className='animate-trans-top mt-20 mx-auto lg:mt-auto'/>
+        className='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-auto w-[300px]'/>
       </div>
     </div>
     </section>
