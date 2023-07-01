@@ -29,10 +29,10 @@ const Banner = () => {
     deleteSpeed: 30,
     delaySpeed: 2000,
   });
+  //container flex items-center justify-center dark:bg-gray-900 max-w-screen-xl px-4 py-8 lg:px-6 mx-auto md:w-auto
   return (
-    <section id="home" className="container flex items-center justify-center lg:w-[1280px] mx-auto md:w-auto">
-      <img src='/wave.svg' className='absolute lg:bottom-0 bottom-[-110px] w-[100%] mix-blend-overlay'/>
-      <img src='/waveServices.svg' className='absolute lg:top-20 top-[70px] w-[100%] mix-blend-overlay'/>
+    <section id="home" className="flex items-center justify-center dark:bg-gray-900">
+      <div className="max-w-screen-xl px-4 py-8 lg:px-6 mx-auto md:w-auto">
       <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[10%] lg:left-[20%] lg:w-52 w-20'></img>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[45%] top-56'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-96 top-3/4'/>
@@ -40,7 +40,7 @@ const Banner = () => {
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/>
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px] h-96 text-center justify-center items-center mx-auto mt-20">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto mt-20">
       <div className="lg:text-8xl text-7xl mt-10">
         <h2 className="font-bold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">
       <p className="font-mono font-bold text-center dark:text-white text-black md:text-2xl text-xl lg:text-3xl">
@@ -63,6 +63,7 @@ const Banner = () => {
         alt='icon'
         className='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-auto w-[300px]'/>
       </div>
+    </div>
     </div>
     </section>
   );
