@@ -117,11 +117,11 @@ const Services = () => {
           autoplay
           loop
           mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
+          src=""
           style={{ width: "200px", height: "200px" }}
           class='lg:mt-[-120px]'
           ></lottie-player>
-          <img src='/Ellipse.png' width={30} height={10} className="mt-10 text-8xl font-bold mix-blend-overlay lg:mt-[-80px]"/>
+          <img src='' width={30} height={10} className="mt-10 text-8xl font-bold mix-blend-overlay lg:mt-[-80px]"/>
           </div>
             <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
