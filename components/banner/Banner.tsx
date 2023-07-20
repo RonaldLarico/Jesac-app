@@ -1,11 +1,17 @@
 "use client";
-import React from "react";
+import React, { useRef }from "react";
 
 import Image from 'next/image';
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Banner = () => {
+
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   const [title] = useTypewriter({
     words: [
       "METALÚRGICA",
@@ -40,7 +46,7 @@ const Banner = () => {
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/>
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto mt-20">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto">
       <div className="lg:text-8xl text-7xl mt-10">
         <h2 className="font-bold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">
       <p className="font-mono font-bold text-center dark:text-white text-black md:text-2xl text-xl lg:text-3xl">
@@ -56,12 +62,22 @@ const Banner = () => {
       </h2>
       </div>
       <div>
-        <Image
+      <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/4d7fee5b-5039-43dd-9605-d996fdd61e8d/fltqmnueuc.json"
+          //style={{ width: "650px", height: "600px" }}
+          class='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-[650px] w-[350px] lg:h-[600px] h-[300]'
+          ></lottie-player>
+        {/* <Image
         src='/icon-jesac.png'
         width={500}
         height={500}
         alt='icon'
-        className='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-auto w-[300px]'/>
+        className='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-auto w-[300px]'/> */}
       </div>
     </div>
     </div>

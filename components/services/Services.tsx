@@ -1,72 +1,3 @@
-/* import React, { useRef } from 'react'
-
-const Services = () => {
-
-  const ref = useRef(null);
-  React.useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
-
-  return (
-    <section id="services" className="lg:w-[1280px] mx-auto md:w-auto">
-    <div className="grid grid-cols-3 gap-4 dark:bg-gray-100 dark:shadow-gray-50 shadow-2xl rounded-3xl text-center lg:mt-60 mt-[400px] mx-5">
-      <div className='flex justify-center'>
-        <div className=''>
-        <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
-          style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-100px]'
-          ></lottie-player>
-            <p className='text-white lg:mt-[-150px] mt-[-150px] mix-blend-overlay text-7xl'>01</p>
-            <h2 className='text-teal-400 mt-20'>01</h2>
-          </div>
-      </div>
-      <div className='flex items-center justify-center'>
-        <div className=''>
-        <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
-          style={{ width: "200px", height: "200px" }}
-          class='flex lg:mt-[-150px]'
-          />
-          <h2 className='text-white lg:mt-[-150px]  mt-[-150px] mix-blend-overlay text-7xl'>02</h2>
-        </div>
-        <div>
-            <h2 className='text-teal-400 flex mt-20'>02</h2>
-        </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className=''>
-        <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
-          style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-100px]'
-          ></lottie-player>
-          <h2 className='text-white lg:mt-[-150px] mt-[-150px] mix-blend-overlay text-7xl'>03</h2>
-            <h2 className='text-teal-400 mt-20'>03</h2>
-        </div>
-      </div>
-    </div>
-    </section>
-  )
-}
-
-export default Services */
-
 import Link from 'next/link';
 import React, { useRef } from 'react'
 
@@ -110,7 +41,6 @@ const Services = () => {
           className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
         >
           <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-          <div className="flex mx-auto">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -119,11 +49,10 @@ const Services = () => {
           mode="normal"
           src=""
           style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-120px]'
+          class='lg:mt-[-100px]'
           ></lottie-player>
-          <img src='' width={30} height={10} className="mt-10 text-8xl font-bold mix-blend-overlay lg:mt-[-80px]"/>
-          </div>
-            <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
+
+            <h3 className="mb-4 text-2xl font-semibold">Diseño de paginas web</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Best option for personal use & for your next project.
             </p>
@@ -231,10 +160,11 @@ const Services = () => {
           autoplay
           loop
           mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
+          src=""
           style={{ width: "200px", height: "200px" }}
           class='lg:mt-[-100px]'
           ></lottie-player>
+
             <h3 className="mb-4 text-2xl font-semibold">Company</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Relevant for multiple users, extended & premium support.
@@ -344,10 +274,11 @@ const Services = () => {
           autoplay
           loop
           mode="normal"
-          src="https://assets10.lottiefiles.com/packages/lf20_5gdcuanx.json"
+          src=""
           style={{ width: "200px", height: "200px" }}
           class='lg:mt-[-100px]'
           ></lottie-player>
+
             <h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Best for large scale uses and extended redistribution rights.
