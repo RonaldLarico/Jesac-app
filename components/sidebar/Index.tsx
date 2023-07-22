@@ -88,7 +88,7 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
       </div>
 
       <div>
-        <ul className='lg:pl-4 pl-1 mt-16'>
+        <ul className='lg:pl-4 pl-1 mt-36'>
           <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
             <Link
               href='#home'

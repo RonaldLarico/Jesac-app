@@ -19,7 +19,7 @@ const Services = () => {
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="false"
-            className="mb-4 lg:mt-10 mt-20 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
           >
             Designed for business teams like yours
           </h2>
