@@ -9,7 +9,7 @@ const Services = () => {
   });
 
   return (
-    <section id="FEACHER" className="bg-white dark:bg-gray-900">
+    <section id="services" className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
           <h2
@@ -19,7 +19,7 @@ const Services = () => {
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="false"
-            className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            className="mb-4 lg:mt-10 mt-20 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
           >
             Designed for business teams like yours
           </h2>
