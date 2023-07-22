@@ -47,7 +47,7 @@ const Services = () => {
           autoplay
           loop
           mode="normal"
-          src="https://lottie.host/cfb49655-6ae0-431a-81ee-29048f2de1c3/PTqT7yDuvN.json"
+          src="https://lottie.host/0c1768dc-f996-43fe-b1c0-ac6088edc564/ut2w82CrrV.json"
           style={{ width: "200px", height: "200px" }}
           class='lg:mt-[-100px]'
           ></lottie-player>

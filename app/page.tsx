@@ -4,6 +4,7 @@ import { useState } from "react"
 import Banner from "@/components/banner/Banner";
 import Navbar from "@/components/navbar/Navbar";
 import Services from "@/components/services/Services";
+import TwoServices from "@/components/services/TwoServices";
 import Sidebar from "@/components/sidebar/Index";
 
 import { CgMenuGridO, CgCloseO } from "react-icons/cg"
@@ -29,6 +30,7 @@ export default function Home() {
           </nav>
           <Banner />
           <Services />
+          <TwoServices />
         </div>
       </div>
     </main>
