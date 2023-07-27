@@ -11,11 +11,11 @@ import { MdOutlineContactPhone } from 'react-icons/md'
 import { BsMeta } from 'react-icons/bs'
 import DarkMode from '../darkMode/Index';
 
-const Sidebar: React.FC<{ menu: boolean, close: boolean }> = (props) => {
+const Sidebar: React.FC<{ menu: boolean }> = (props) => {
 
   const { menu } = props;
-  const { close } = props;
   const [sidebar, setSidebar] = useState(false);
+  const handleOnClose = () => setSidebar(true)
 
   return (
     <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-28 w-[90px] h-full flex flex-col lg:justify-between lg:py-[30px] py-24 rounded-tr-2xl rounded-br-2xl z-50 transition-all
@@ -95,9 +95,8 @@ const Sidebar: React.FC<{ menu: boolean, close: boolean }> = (props) => {
           <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
             <Link
               href=''
-              onClick={() => setSidebar(!sidebar)}
-              className={`group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors
-              ${ close ? 'left-0' : '-left-full' }`}>
+              onClick={handleOnClose}
+              className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
               <BiLogOut className='lg:text-3xl text-xl' />
             </Link>
             {/* <h2 className='text-center text-white'>Salir</h2> */}
