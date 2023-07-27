@@ -1,5 +1,19 @@
 import Link from 'next/link';
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+
+const icon = (
+  <svg
+    className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      fill-rule="evenodd"
+      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+      clip-rule="evenodd">
+      </path>
+  </svg>
+)
 
 const Services = () => {
 
@@ -9,7 +23,7 @@ const Services = () => {
   });
 
   return (
-    <section id="services" className="bg-white dark:bg-gray-900">
+    <section id="services" className="bg-cyan-50 dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
           <h2
@@ -38,135 +52,23 @@ const Services = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+          className="space-y-8 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0"
         >
-          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
           autoplay
           loop
           mode="normal"
-          src="https://lottie.host/cfb49655-6ae0-431a-81ee-29048f2de1c3/PTqT7yDuvN.json"
-          style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-100px]'
+          src="https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json"
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
           ></lottie-player>
 
-            <h3 className="mb-4 text-2xl font-semibold">Diseño de paginas web</h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Best option for personal use & for your next project.
-            </p>
-            <div className="flex items-baseline justify-center my-8">
-              <span className="mr-2 text-5xl font-extrabold">$29</span>
-              <span className="text-gray-500 dark:text-gray-400">/month</span>
-            </div>
-
-            <ul role="list" className="mb-8 space-y-4 text-left">
-              <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span>Individual configuration</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span>No setup, or hidden fees</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span>
-                  Team size: <span className="font-semibold">1 developer</span>
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span>
-                  Premium support:{' '}
-                  <span className="font-semibold">6 months</span>
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span>
-                  Free updates: <span className="font-semibold">6 months</span>
-                </span>
-              </li>
-            </ul>
-            <Link
-              href="#"
-              className="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900"
-            >
-              Get started
-            </Link>
-          </div>
-
-          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-          <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json"
-          style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-100px]'
-          ></lottie-player>
-
-            <h3 className="mb-4 text-2xl font-semibold">Company</h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">Diseño de paginas web</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div className="flex items-baseline justify-center my-8">
@@ -176,98 +78,217 @@ const Services = () => {
 
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>Individual configuration</span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>No setup, or hidden fees</span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
                   Team size:{' '}
                   <span className="font-semibold">10 developers</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
                   Premium support:{' '}
                   <span className="font-semibold">24 months</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
                   Free updates: <span className="font-semibold">24 months</span>
                 </span>
               </li>
             </ul>
-            <Link
-              href="#"
-              className="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900"
-            >
-              Get started
-            </Link>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
           </div>
 
-          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json"
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
+          ></lottie-player>
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">Tiendas virtuales (Ecommerce)</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
+              Relevant for multiple users, extended & premium support.
+            </p>
+            <div className="flex items-baseline justify-center my-8">
+              <span className="mr-2 text-5xl font-extrabold">$99</span>
+              <span className="text-gray-500 dark:text-gray-40">/month</span>
+            </div>
+
+            <ul role="list" className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>Individual configuration</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>No setup, or hidden fees</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Team size:{' '}
+                  <span className="font-semibold">10 developers</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Premium support:{' '}
+                  <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Free updates: <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+            </ul>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
+          </div>
+
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/bc1995c9-cada-46a8-b22e-9a9a32f806ee/axb3bpv8Wi.json"
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
+          ></lottie-player>
+
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">ChatBots inteligentes IA</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
+              Relevant for multiple users, extended & premium support.
+            </p>
+            <div className="flex items-baseline justify-center my-8">
+              <span className="mr-2 text-5xl font-extrabold">$99</span>
+              <span className="text-gray-500 dark:text-gray-40">/month</span>
+            </div>
+
+            <ul role="list" className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>Individual configuration</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>No setup, or hidden fees</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Team size:{' '}
+                  <span className="font-semibold">10 developers</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Premium support:{' '}
+                  <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Free updates: <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+            </ul>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
+          </div>
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/c6bf9ec8-6b66-4cd4-946b-9aa66b580f51/2HTZVjVwBI.json"
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
+          ></lottie-player>
+
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">Desarrollo de aplicaciones moviles</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
+              Relevant for multiple users, extended & premium support.
+            </p>
+            <div className="flex items-baseline justify-center my-8">
+              <span className="mr-2 text-5xl font-extrabold">$99</span>
+              <span className="text-gray-500 dark:text-gray-40">/month</span>
+            </div>
+
+            <ul role="list" className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>Individual configuration</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>No setup, or hidden fees</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Team size:{' '}
+                  <span className="font-semibold">10 developers</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Premium support:{' '}
+                  <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Free updates: <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+            </ul>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
+          </div>
+
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -275,110 +296,114 @@ const Services = () => {
           loop
           mode="normal"
           src="https://lottie.host/bf0afe68-5ad4-4fc1-91e1-44270163d284/b8F57gUDTT.json"
-          style={{ width: "200px", height: "200px" }}
-          class='lg:mt-[-100px]'
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
           ></lottie-player>
 
-            <h3 className="mb-4 text-2xl font-semibold">Enterprise</h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Best for large scale uses and extended redistribution rights.
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">Desarrollo de software a medida</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
+              Relevant for multiple users, extended & premium support.
             </p>
             <div className="flex items-baseline justify-center my-8">
-              <span className="mr-2 text-5xl font-extrabold">$499</span>
-              <span className="text-gray-500 dark:text-gray-400">/month</span>
+              <span className="mr-2 text-5xl font-extrabold">$99</span>
+              <span className="text-gray-500 dark:text-gray-40">/month</span>
             </div>
 
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>Individual configuration</span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>No setup, or hidden fees</span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
                   Team size:{' '}
-                  <span className="font-semibold">100+ developers</span>
+                  <span className="font-semibold">10 developers</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
                   Premium support:{' '}
-                  <span className="font-semibold">36 months</span>
+                  <span className="font-semibold">24 months</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                {icon}
                 <span>
-                  Free updates: <span className="font-semibold">36 months</span>
+                  Free updates: <span className="font-semibold">24 months</span>
                 </span>
               </li>
             </ul>
-            <Link
-              href="#"
-              className="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900"
-            >
-              Get started
-            </Link>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
+          </div>
+
+          <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <lottie-player
+          id="firstLottie"
+          ref={ref}
+          autoplay
+          loop
+          mode="normal"
+          src="https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json"
+          style={{ width: "180px", height: "180px" }}
+          class='lg:mt-[-20px] m-auto'
+          ></lottie-player>
+
+          <div className="relative text-gray-500 dark:text-gray-300">
+            <h3 className="mb-4 text-2xl font-bold">Facturacion electronica</h3>
+            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-400">
+              Relevant for multiple users, extended & premium support.
+            </p>
+            <div className="flex items-baseline justify-center my-8">
+              <span className="mr-2 text-5xl font-extrabold">$99</span>
+              <span className="text-gray-500 dark:text-gray-40">/month</span>
+            </div>
+
+            <ul role="list" className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>Individual configuration</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>No setup, or hidden fees</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Team size:{' '}
+                  <span className="font-semibold">10 developers</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Premium support:{' '}
+                  <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Free updates: <span className="font-semibold">24 months</span>
+                </span>
+              </li>
+            </ul>
+            <button
+              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              Ver mas
+            </button>
+          </div>
           </div>
         </div>
       </div>
