@@ -22,8 +22,8 @@ const Services = () => {
   const [designModal, setDesignModal] =useState(false)
   const [storeModal, setStoreModal] =useState(false)
 
-  const handleOnClose = () => setDesignModal(false)
-  const handleOnClos = () => setStoreModal(false)
+  const handleOnCloseWeb = () => setDesignModal(false)
+  const handleOnCloseStore = () => setStoreModal(false)
 
   const ref = useRef(null);
   React.useEffect(() => {
@@ -87,30 +87,28 @@ const Services = () => {
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>Individual configuration</span>
+                <span>Diseño web moderno y atractivo</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>No setup, or hidden fees</span>
+                <span>Paginas web super rapidas</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Team size:{' '}
-                  <span className="font-semibold">10 developers</span>
+                  Soporte web permanente
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Premium support:{' '}
-                  <span className="font-semibold">24 months</span>
+                  Seguridad web
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Free updates: <span className="font-semibold">24 months</span>
+                  Puntualidad y profesionalismo garantizado
                 </span>
               </li>
             </ul>
@@ -146,17 +144,16 @@ const Services = () => {
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>Individual configuration</span>
+                <span>Tiendas online adaptable a moviles</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>No setup, or hidden fees</span>
+                <span>Tienda virtual administrable</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Team size:{' '}
-                  <span className="font-semibold">10 developers</span>
+                  Catalogo de productos
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -418,12 +415,12 @@ const Services = () => {
         </div>
       </div>
       <DesignWebModal
-        onClose={handleOnClose}
-        visible={designModal} />
+        onClose={handleOnCloseWeb}
+        open={designModal} />
 
       <StoreModal
-        onClose={handleOnClos}
-        visible={storeModal}/>
+        onClose={handleOnCloseStore}
+        open={storeModal}/>
     </section>
   );
 };

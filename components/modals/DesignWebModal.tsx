@@ -1,24 +1,19 @@
-import React, { MouseEvent, useRef } from 'react'
+import React, { MouseEvent } from 'react'
 
 import { FaWindowClose } from 'react-icons/fa'
 
 interface DesignWebModalProps {
-  visible: boolean;
+  open: boolean;
   onClose: () => void;
 }
 
-const DesignWebModal: React.FC<DesignWebModalProps> = ({visible, onClose}) => {
+const DesignWebModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
 
   const handleOnClose = (e: MouseEvent<HTMLDivElement>) => {
     if (e.target instanceof HTMLElement && e.target.id === 'container') onClose();
   };
 
-  if(!visible) return null;
-
-  const ref = useRef(null);
-  React.useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
+  if(!open) return null;
 
   const icon = (
     <svg
@@ -39,7 +34,7 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({visible, onClose}) => {
       id='container'
       onClick={handleOnClose}
       className='fixed inset-0 md:overflow-y-scroll overflow-y-scroll bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
-      <div className='absolute lg:top-12 md:top-0 top-0'>
+      <div className='absolute lg:top-32 md:top-0 top-0'>
       <button
         className='p-2 text-5xl text-cyan-600 hover:text-cyan-700'
         onClick={onClose}>
@@ -49,54 +44,45 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({visible, onClose}) => {
 
       <div className='space-y-6 md:space-y-0 lg:max-w-screen-xl md:max-w-[450px] max-w-[400px] mx-auto md:max-h-[95vh] max-h-[95vh] p-10 gap-10 rounded-3xl lg:grid lg:grid-cols-3 md:grid md:grid-cols-1'>
       <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
-          <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json"
-          style={{ width: "180px", height: "180px" }}
-          class='lg:mt-[-20px] m-auto'
-          ></lottie-player>
-
           <div className="text-gray-300 dark:text-gray-900">
-            <h3 className="mb-4 text-2xl font-bold">Diseño de paginas web</h3>
-            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-600">
-              Relevant for multiple users, extended & premium support.
-            </p>
+            <h3 className="mb-4 text-2xl font-bold">PLAN ECONOMICO - Diseño de paginas web</h3>
             <div className="flex items-baseline justify-center my-8">
-              <span className="mr-2 text-5xl font-extrabold">$99</span>
-              <span className="text-gray-500 dark:text-gray-800">/month</span>
+              <span className="mr-2 text-5xl font-extrabold">S/ 599</span>
+              <span className="text-gray-500 dark:text-gray-800">/pago unico</span>
             </div>
 
             <ul role="list" className="mb-8 space-y-4 text-left font-semibold">
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>Individual configuration</span>
+                <span>Diseño web adaptable a moviles</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
-                <span>No setup, or hidden fees</span>
+                <span>Hosting GRATIS por 1 año</span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Team size:{' '}
-                  <span className="font-bold">10 developers</span>
+                  Dominio {' '}
+                  <span className="font-bold">.com</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Premium support:{' '}
-                  <span className="font-bold">24 months</span>
+                  Certificado de seguridad SSL
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 {icon}
                 <span>
-                  Free updates: <span className="font-bold">24 months</span>
+                  Posicionamiento SEO basico
+                </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {icon}
+                <span>
+                  Enlazes a redes sociales
                 </span>
               </li>
             </ul>
@@ -109,25 +95,11 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({visible, onClose}) => {
           </div>
 
       <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
-          <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json"
-          style={{ width: "180px", height: "180px" }}
-          class='lg:mt-[-20px] m-auto'
-          ></lottie-player>
-
           <div className="text-gray-300 dark:text-gray-900">
-            <h3 className="mb-4 text-2xl font-bold">Diseño de paginas web</h3>
-            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-600">
-              Relevant for multiple users, extended & premium support.
-            </p>
+            <h3 className="mb-4 text-2xl font-bold">PLAN EMPRESARIAL - Diseño de paginas web</h3>
             <div className="flex items-baseline justify-center my-8">
-              <span className="mr-2 text-5xl font-extrabold">$99</span>
-              <span className="text-gray-500 dark:text-gray-800">/month</span>
+              <span className="mr-2 text-5xl font-extrabold">S/ 999</span>
+              <span className="text-gray-500 dark:text-gray-800">/pago unico</span>
             </div>
 
             <ul role="list" className="mb-8 space-y-4 text-left font-semibold">
@@ -169,25 +141,12 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({visible, onClose}) => {
           </div>
 
       <div className="relative flex flex-col md:mb-20 max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
-          <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json"
-          style={{ width: "180px", height: "180px" }}
-          class='lg:mt-[-20px] m-auto'
-          ></lottie-player>
 
           <div className="text-gray-300 dark:text-gray-900">
-            <h3 className="mb-4 text-2xl font-bold">Diseño de paginas web</h3>
-            <p className="font-semibold text-gray-500 sm:text-lg dark:text-gray-600">
-              Relevant for multiple users, extended & premium support.
-            </p>
+            <h3 className="mb-4 text-2xl font-bold">PLAN CORPORATIVO - Diseño de paginas web</h3>
             <div className="flex items-baseline justify-center my-8">
-              <span className="mr-2 text-5xl font-extrabold">$99</span>
-              <span className="text-gray-500 dark:text-gray-800">/month</span>
+              <span className="mr-2 text-5xl font-extrabold">S/ 1499</span>
+              <span className="text-gray-500 dark:text-gray-800">/pago unico</span>
             </div>
 
             <ul role="list" className="mb-8 space-y-4 text-left font-semibold">

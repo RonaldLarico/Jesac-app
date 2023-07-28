@@ -39,13 +39,13 @@ const Banner = () => {
   return (
     <section id="home" className="flex items-center justify-center bg-cyan-50 dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 lg:px-6 mx-auto md:w-auto">
-      <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[10%] lg:left-[20%] lg:w-52 w-20'></img>
+      {/* <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[10%] lg:left-[20%] lg:w-52 w-20'></img>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[45%] top-56'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-96 top-3/4'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-1/2 top-[60%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/>
+      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/> */}
     <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto">
       <div className="lg:text-8xl text-7xl mt-10">
         <h2 className="font-bold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">
