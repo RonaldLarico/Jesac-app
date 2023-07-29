@@ -11,17 +11,23 @@ import { MdOutlineContactPhone } from 'react-icons/md'
 import { BsMeta } from 'react-icons/bs'
 import DarkMode from '../darkMode/Index';
 
-const Sidebar: React.FC<{ menu: boolean }> = (props) => {
+interface SidebarPros {
+  menu: boolean;
+  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-  const { menu } = props;
+const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
+
   const [sidebar, setSidebar] = useState(false);
-  const handleOnClose = () => setSidebar(true)
+  const handleOnClose = () => {
+    setMenu(!menu);
+  }
 
   return (
     <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-28 w-[90px] h-full flex flex-col lg:justify-between lg:py-[30px] py-24 rounded-tr-2xl rounded-br-2xl z-50 transition-all
       ${menu ? 'left-0' : '-left-full'}`}>
       <div>
-      <ul className='lg:pl-4 pl-1'>
+      <ul className='lg:pl-4 pl-1 lg:mt-12 -mt-10'>
         {/*<li>
           <h1 className='text-2xl text-gray-300 uppercase font-bold text-center my-5'>
             LOGO
@@ -32,9 +38,9 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             href='#home'
             onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-            <IoHomeOutline className='lg:text-3xl text-xl' />
+            <IoHomeOutline className='lg:text-3xl text-2xl' />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Inicio</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Inicio</h2>
         </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
@@ -42,9 +48,9 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             href='#services'
             onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-            <FiDatabase className='lg:text-3xl text-xl' />
+            <FiDatabase className='lg:text-3xl text-2xl' />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Servicios</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Servicios</h2>
         </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
@@ -52,9 +58,9 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             href='#'
             onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-            <RiContactsLine className='lg:text-3xl text-xl' />
+            <RiContactsLine className='lg:text-3xl text-2xl' />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Nosotros</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Nosotros</h2>
         </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
@@ -62,9 +68,9 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             href='#'
             onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-            <MdOutlineContactPhone className='lg:text-3xl text-xl' />
+            <MdOutlineContactPhone className='lg:text-3xl text-2xl' />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Contacto</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Contacto</h2>
         </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
@@ -74,7 +80,8 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             className='group-hover:bg-cyan-600 p-2 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <DarkMode />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Servicios</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>modo {' '}<span className='font-mono'> ligth</span>
+          </h2>
         </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
@@ -83,23 +90,23 @@ const Sidebar: React.FC<{ menu: boolean }> = (props) => {
             target='_blank'
             onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-            <BsMeta className='lg:text-3xl text-xl' />
+            <BsMeta className='lg:text-3xl text-2xl' />
           </Link>
-          {/* <h2 className='flex justify-center text-white'>Metalurgica</h2> */}
+          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Metalurgica</h2>
         </li>
       </ul>
       </div>
 
       <div>
-        <ul className='lg:pl-4 pl-1 mt-36'>
+        <ul className='lg:pl-4 pl-1 lg:mt-32 md:mt-52 mt-16 '>
           <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
             <Link
               href=''
               onClick={handleOnClose}
               className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
-              <BiLogOut className='lg:text-3xl text-xl' />
+              <BiLogOut className='lg:text-3xl text-2xl' />
             </Link>
-            {/* <h2 className='text-center text-white'>Salir</h2> */}
+            <h2 className='text-center text-gray-200 text-xs font-bold font-mono uppercase'>Salir</h2>
           </li>
         </ul>
       </div>

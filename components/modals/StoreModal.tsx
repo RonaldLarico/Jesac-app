@@ -22,9 +22,9 @@ const StoreModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg">
       <path
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-        clip-rule="evenodd">
+        clipRule="evenodd">
         </path>
     </svg>
   )
@@ -36,14 +36,14 @@ const StoreModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
       className='fixed inset-0 md:overflow-y-scroll overflow-y-scroll bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
       <div className='absolute lg:top-32 md:top-0 top-0'>
       <button
-        className='p-2 text-5xl text-cyan-600 hover:text-cyan-700'
+        className='p-2 text-5xl text-cyan-600 hover:text-cyan-700 hover:scale-105 duration-300'
         onClick={onClose}>
         <FaWindowClose />
       </button>
       </div>
 
       <div className='space-y-6 md:space-y-0 lg:max-w-screen-xl md:max-w-[450px] max-w-[400px] mx-auto md:max-h-[95vh] max-h-[95vh] p-10 gap-10 rounded-3xl lg:grid lg:grid-cols-3 md:grid md:grid-cols-1'>
-      <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
+      <div className="flex flex-col max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
           <div className="text-gray-300 dark:text-gray-900">
             <h3 className="mb-4 text-2xl font-bold">PLAN ECONOMICO - Ecommerce</h3>
             <div className="flex items-baseline justify-center my-8">
@@ -89,7 +89,7 @@ const StoreModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
           </div>
           </div>
 
-      <div className="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
+      <div className="flex flex-col max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
           <div className="text-gray-300 dark:text-gray-900">
             <h3 className="mb-4 text-2xl font-bold">PLAN EMPRESARIAL - Ecommerce</h3>
             <div className="flex items-baseline justify-center my-8">
@@ -135,7 +135,7 @@ const StoreModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
           </div>
           </div>
 
-      <div className="relative flex flex-col md:mb-20 max-w-lg p-6 mx-auto text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
+      <div className="flex flex-col md:mb-20 max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
 
           <div className="text-gray-300 dark:text-gray-900">
             <h3 className="mb-4 text-2xl font-bold">PLAN CORPORATIVO - Ecommerce</h3>
