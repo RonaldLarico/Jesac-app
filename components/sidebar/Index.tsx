@@ -18,25 +18,18 @@ interface SidebarPros {
 
 const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
 
-  const [sidebar, setSidebar] = useState(false);
   const handleOnClose = () => {
     setMenu(!menu);
   }
 
   return (
-    <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-28 w-[90px] h-full flex flex-col lg:justify-between lg:py-[30px] py-24 rounded-tr-2xl rounded-br-2xl z-50 transition-all
+    <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-32 w-[90px] h-full flex flex-col lg:justify-between rounded-tr-2xl rounded-br-2xl z-50 transition-all
       ${menu ? 'left-0' : '-left-full'}`}>
       <div>
-      <ul className='lg:pl-4 pl-1 lg:mt-12 -mt-10'>
-        {/*<li>
-          <h1 className='text-2xl text-gray-300 uppercase font-bold text-center my-5'>
-            LOGO
-          </h1>
-        </li> */}
+      <ul className='pl-2'>
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
             href='#home'
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <IoHomeOutline className='lg:text-3xl text-2xl' />
           </Link>
@@ -46,7 +39,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
             href='#services'
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <FiDatabase className='lg:text-3xl text-2xl' />
           </Link>
@@ -56,7 +48,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
             href='#'
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <RiContactsLine className='lg:text-3xl text-2xl' />
           </Link>
@@ -66,7 +57,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
             href='#'
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <MdOutlineContactPhone className='lg:text-3xl text-2xl' />
           </Link>
@@ -76,7 +66,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
             href=''
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-2 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <DarkMode />
           </Link>
@@ -88,7 +77,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
           <Link
             href='https://jesac.onrender.com/'
             target='_blank'
-            onClick={() => setSidebar(!sidebar)}
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <BsMeta className='lg:text-3xl text-2xl' />
           </Link>
@@ -98,7 +86,7 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
       </div>
 
       <div>
-        <ul className='lg:pl-4 pl-1 lg:mt-32 md:mt-52 mt-16 '>
+        <ul className='lg:pl-4 pl-1 lg:mt-32 md:mt-52 mt-9 '>
           <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
             <Link
               href=''

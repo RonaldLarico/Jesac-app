@@ -38,7 +38,7 @@ const Banner = () => {
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
       <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/> */}
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto mb-10">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto mb-10 lg:mt-0 mt-16">
       <div className="lg:text-8xl text-7xl">
       <Typed
         className="font-bold font-mono text-center dark:text-gray-300 text-black md:text-2xl text-xl lg:text-3xl mt-2"
