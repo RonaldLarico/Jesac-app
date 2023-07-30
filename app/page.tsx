@@ -4,18 +4,16 @@ import { useState } from "react"
 import Link from 'next/link';
 
 import Banner from "@/components/banner/Banner";
-import Navbar from "@/components/navbar/Navbar";
 import Services from "@/components/services/Services";
 import Sidebar from "@/components/sidebar/Index";
+import NavBar from "@/components/navbar/Navbar";
 
 import { CgMenuGridO, CgCloseO } from "react-icons/cg"
 import { ImCross } from "react-icons/im";
-import NavBar from "@/components/navbar/Navbar";
 
 export default function Home() {
 
   const [menu, setMenu] = useState(false);
-  const [navbar, setNavbar] = useState(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -36,9 +34,9 @@ export default function Home() {
               { menu ? <ImCross /> : <CgMenuGridO /> }
             </button>
           </nav>
-          <NavBar navbar={navbar} />
-              <Banner />
-              <Services />
+            <NavBar />
+            <Banner />
+            <Services />
         </div>
       </div>
     </main>
