@@ -34,7 +34,7 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
       id='container'
       onClick={handleOnClose}
       className='fixed inset-0 md:overflow-y-scroll overflow-y-scroll bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
-      <div className='absolute lg:top-32 md:top-0 top-0'>
+      <div className='absolute lg:top-32 md:top-20 top-20'>
       <button
         className='p-2 text-5xl text-cyan-600 hover:text-cyan-700 hover:scale-105 duration-300'
         onClick={onClose}>
@@ -42,7 +42,7 @@ const DesignWebModal: React.FC<DesignWebModalProps> = ({open, onClose}) => {
       </button>
       </div>
 
-      <div className='space-y-6 md:space-y-0 lg:max-w-screen-xl md:max-w-[450px] max-w-[400px] mx-auto md:max-h-[95vh] max-h-[95vh] p-10 gap-10 rounded-3xl lg:grid lg:grid-cols-3 md:grid md:grid-cols-1'>
+      <div className='space-y-6 md:space-y-0 lg:mt-0 md:mt-40 mt-40 lg:max-w-screen-xl md:max-w-[450px] max-w-[400px] mx-auto md:max-h-[95vh] max-h-[95vh] p-10 gap-10 rounded-3xl lg:grid lg:grid-cols-3 md:grid md:grid-cols-1'>
       <div className="flex flex-col max-w-lg p-6 mx-auto hover:scale-105 duration-300 text-center text-gray-900 bg-gray-800 dark:bg-gray-300 rounded-3xl xl:p-8">
           <div className="text-gray-300 dark:text-gray-900">
             <h3 className="mb-4 text-2xl font-bold">PLAN ECONOMICO - Diseño de paginas web</h3>

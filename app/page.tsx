@@ -7,6 +7,7 @@ import Banner from "@/components/banner/Banner";
 import Services from "@/components/services/Services";
 import Sidebar from "@/components/sidebar/Index";
 import NavBar from "@/components/navbar/Navbar";
+import Steps from "@/components/steps/Index";
 
 import { CgMenuGridO, CgCloseO } from "react-icons/cg"
 import { ImCross } from "react-icons/im";
@@ -37,6 +38,7 @@ export default function Home() {
             <NavBar />
             <Banner />
             <Services />
+            <Steps />
         </div>
       </div>
     </main>

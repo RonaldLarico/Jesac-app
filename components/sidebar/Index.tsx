@@ -18,18 +18,18 @@ interface SidebarPros {
 
 const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
 
-  const [modo, setModo] = useState('modoLigth')
+  const [modo, setModo] = useState('modo Ligth')
 
   const handleOnClose = () => {
     setMenu(!menu);
   }
 
   const handleOnModo = () => {
-    setModo('modoDark')
+    setModo('modo Dark')
   }
 
   return (
-    <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-32 w-[90px] h-full flex flex-col lg:justify-between rounded-tr-2xl rounded-br-2xl z-50 transition-all
+    <div className={`bg-gray-800/90 fixed lg:left-0 top-0 lg:w-32 w-[116px] h-full flex flex-col lg:justify-between rounded-tr-2xl rounded-br-2xl z-50 transition-all
       ${menu ? 'left-0' : '-left-full'}`}>
       <div>
       <ul className='pl-2 lg:mt-20 md:mt-16 mt-0'>
@@ -69,14 +69,6 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
           <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Contacto</h2>
         </li>
 
-        <li className='text-center hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <button
-            className='group-hover:bg-cyan-600 p-2 rounded-xl text-cyan-600 group-hover:text-white transition-colors'>
-            <DarkMode />
-          <h2 onClick={handleOnModo} className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>{modo}
-          </h2>
-          </button>
-        </li>
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
@@ -86,6 +78,15 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
             <BsMeta className='lg:text-3xl text-2xl' />
           </Link>
           <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Metalurgica</h2>
+        </li>
+
+        <li className='text-center hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+          <button
+            className='group-hover:bg-cyan-600 p-2 rounded-xl text-cyan-600 group-hover:text-white transition-colors'>
+            <DarkMode />
+          <h2 onClick={handleOnModo} className='flex justify-center mt-3 text-gray-200 text-xs font-bold font-mono uppercase'>{modo}
+          </h2>
+          </button>
         </li>
       </ul>
       </div>
