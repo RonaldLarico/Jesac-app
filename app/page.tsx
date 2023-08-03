@@ -8,6 +8,7 @@ import Services from "@/components/services/Services";
 import Sidebar from "@/components/sidebar/Index";
 import NavBar from "@/components/navbar/Navbar";
 import Steps from "@/components/steps/Index";
+import Whatsapp from "@/components/whatsapp/Index";
 
 import { CgMenuGridO, CgCloseO } from "react-icons/cg"
 import { ImCross } from "react-icons/im";
@@ -39,6 +40,7 @@ export default function Home() {
             <Banner />
             <Services />
             <Steps />
+            <Whatsapp />
         </div>
       </div>
     </main>

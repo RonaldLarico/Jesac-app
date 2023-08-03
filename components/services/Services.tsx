@@ -17,7 +17,7 @@ const Services = () => {
   });
 
   return (
-    <section id="services" className="bg-cyan-50 dark:bg-gray-900">
+    <section id="services" className="bg-cyan-50 dark:bg-sky-950">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
           <h2

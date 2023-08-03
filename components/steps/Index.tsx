@@ -1,150 +1,39 @@
-import React from 'react'
+
+import React, { useRef } from 'react'
 
 const Steps = () => {
+
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
-    <section id="steps" className="text-gray-700 body-font">
-    <div className="container max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
-      <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-        ¿Cual es el Proceso a Seguir?
-      </h1>
-      <div className='grid lg:grid-cols-2 grid-cols-1'>
-      <div className="py-3 flex flex-wrap">
-        <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-            1
-          </div>
-          <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                Charlemos
-              </h2>
-              <p className="leading-relaxed">
-                Platicame más acerca de lo que tienes en mente, los detalles de
-                tu proyecto para saber como podemos resolverlo.
-              </p>
-            </div>
-          </div>
+    <section id='about' className=''>
+      <div className='grid grid-cols-2 max-w-screen-xl mx-auto h-auto'>
+        <div className='p-6 mt-24 text-gray-500'>
+          <h2 className='uppercase mb-4 font-sans font-extrabold text-xl text-gray-600'>Sobre nosotros</h2>
+          <h1 className='font-extrabold text-5xl mb-4 text-gray-700'>Impulsamos tu negocio</h1>
+          <p className='font-semibold text-2xl mb-4'>Centramos esfuerzos en conocer la marca de nuestros clientes y llevar al siguiente nivel.</p>
+          <p className='font-semibold text-2xl mb-4'>Digital Marketing nace con la misión principal de ofrecer resultados inmediatos a sus clientes usando las mejores herramientas disponibles.</p>
+          <button className='bg-indigo-600 text-gray-300 mt-10 px-10 py-2 text-xl font-bold font-mono rounded-lg uppercase'>
+            Contacto
+          </button>
         </div>
-        <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-            2
-          </div>
-          <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                Diseño y Planeación
-              </h2>
-              <p className="leading-relaxed">
-                A partir de la info que obtuvimos, hay que planear y diseñar la
-                solución para que sea acorde a lo que tu necesitas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-            3
-          </div>
-          <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-              </svg>
-            </div>
-            <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                Desarrollo
-              </h2>
-              <p className="leading-relaxed">
-                En esta parte nos ponemos a implementar todo y a construir la
-                solución con la tecnología más adecuada a tu proyecto.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-          <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
-            4
-          </div>
-          <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div className="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                Pruebas y Entrega
-              </h2>
-              <p className="leading-relaxed">
-                Finalmente, la solución se prueba (con estandares de calidad) y
-                si estas pasan el producto llega a tus manos. De nosotros para
-                ti, con cariño.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div className='flex items-center justify-center p-6'>
+          <lottie-player
+            id="firstLottie"
+            ref={ref}
+            autoplay
+            loop
+            mode="normal"
+            src="https://lottie.host/cbed5599-a04b-4558-a208-f44762da226b/xxvJeq5lAH.json"
+            //style={{ width: "650px", height: "600px" }}
+            ></lottie-player>
         </div>
       </div>
-    </div>
-  </section>
-  );
-};
+    </section>
+  )
+}
 
-export default Steps;
+export default Steps
