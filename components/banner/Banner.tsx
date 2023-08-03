@@ -94,7 +94,7 @@ const Banner = () => {
           autoplay
           loop
           mode="normal"
-          src="https://lottie.host/4d7fee5b-5039-43dd-9605-d996fdd61e8d/fltqmnueuc.json"
+          src="https://lottie.host/0be35802-67ac-433c-8f57-bf2c9804c39c/lYZxWeL9uo.json"
           //style={{ width: "650px", height: "600px" }}
           ></lottie-player>
         {/* <Image
