@@ -16,6 +16,9 @@ export default function RootLayout({
 {
   return (
     <html lang="en">
+      <head>
+        <title>JESAC- SOFTWARE</title>
+      </head>
       <body className='relative'>
         <ThemeProvider attribute='class' defaultTheme='dark'>
           {children}
