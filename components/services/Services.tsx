@@ -17,7 +17,7 @@ const Services = () => {
   });
 
   return (
-    <section id="services" className="bg-cyan-50 dark:bg-sky-950">
+    <section id="services" className="bg-orange-50 dark:bg-sky-950">
       <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
         <div className="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
           <h2
@@ -48,7 +48,7 @@ const Services = () => {
           data-aos="fade-up"
           className="space-y-8 md:space-y-0 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 md:gap-6 xl:gap-10 sm:mt-6"
         >
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -59,9 +59,9 @@ const Services = () => {
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
 
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">Diseño de paginas web</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">
@@ -81,7 +81,7 @@ const Services = () => {
           </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -91,9 +91,9 @@ const Services = () => {
           src="https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json"
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">Tiendas virtuales (Ecommerce)</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">
@@ -113,7 +113,7 @@ const Services = () => {
           </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -124,9 +124,9 @@ const Services = () => {
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
 
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">ChatBots inteligentes IA</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">
@@ -144,7 +144,7 @@ const Services = () => {
             </button>
           </div>
           </div>
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -155,9 +155,9 @@ const Services = () => {
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
 
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">Desarrollo de aplicaciones moviles</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">
@@ -176,7 +176,7 @@ const Services = () => {
           </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -187,9 +187,9 @@ const Services = () => {
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
 
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">Desarrollo de software a medida</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">
@@ -208,7 +208,7 @@ const Services = () => {
           </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 text-gray-900 bg-gray-50 shadow-2xl rounded-3xl dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center hover:scale-105 duration-300 dark:text-gray-900 dark:bg-gray-50 shadow-2xl rounded-3xl xl:p-8 bg-gray-800 text-white">
           <lottie-player
           id="firstLottie"
           ref={ref}
@@ -219,9 +219,9 @@ const Services = () => {
           style={{ width: "180px", height: "180px" }}
           ></lottie-player>
 
-          <div className="relative text-gray-500 dark:text-gray-300">
+          <div className="relative dark:text-gray-500 text-gray-300">
             <h3 className="mb-6 text-2xl font-bold">Facturacion electronica</h3>
-            <p className="font-bold mb-6 text-gray-500 sm:text-lg dark:text-gray-400">
+            <p className="font-bold mb-6 dark:text-gray-500 sm:text-lg text-gray-400">
               Relevant for multiple users, extended & premium support.
             </p>
             <div role="list" className="mb-8 space-y-2">

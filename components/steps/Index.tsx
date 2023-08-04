@@ -9,7 +9,7 @@ const Steps = () => {
   });
 
   return (
-    <section id='about' className='bg-cyan-50 dark:bg-sky-950'>
+    <section id='about' className='bg-orange-50 dark:bg-sky-950'>
       <div className='grid lg:grid-cols-2 grid-cols-1 max-w-screen-xl mx-auto h-auto'>
         <div className='flex items-center justify-center p-6'>
           <lottie-player
@@ -32,7 +32,7 @@ const Steps = () => {
           </button>
         </div>
         <div className='lg:p-0 p-4 mt-20'>
-          <div className='lg:pr-20 mb-8'>
+          <div className='lg:pr-20 mb-20'>
             <div className='flex flex-row border border-amber-400 shadow-lg shadow-amber-300 hover:scale-105 duration-300 rounded-3xl p-4'>
               <div className="flex-shrink-0 w-24 h-24 my-auto bg-indigo-100 text-amber-400 rounded-full inline-flex items-center justify-center">
                 <svg
@@ -49,16 +49,16 @@ const Steps = () => {
               </div>
               <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-bold font-mono mb-1 lg:text-2xl text-xl uppercase">
-                Diseño y Planeación
+                Analisis y Planificación
               </h2>
               <p className="leading-relaxed lg:text-lg text-md font-sans font-semibold tracking-wide">
-                A partir de la info que obtuvimos, hay que planear y diseñar la
-                solución para que sea acorde a lo que tu necesitas.
+                Con la información requerida que obtuvimos, hay que planear y diseñar la
+                solución para que sea acorde a lo que necesitas.
               </p>
               </div>
             </div>
           </div>
-          <div className='lg:pl-20 mb-8'>
+          <div className='lg:pl-20 mb-20'>
             <div className='flex flex-row border border-fuchsia-600 shadow-lg shadow-fuchsia-500 hover:scale-105 duration-300 rounded-3xl p-4'>
               <div className="flex-shrink-0 w-24 h-24 my-auto bg-indigo-100 text-fuchsia-600 rounded-full inline-flex items-center justify-center">
                 <svg
@@ -76,7 +76,7 @@ const Steps = () => {
               </div>
               <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-bold font-mono mb-1 lg:text-2xl text-xl uppercase">
-                Desarrollo
+                Desarrollo y diseño
               </h2>
               <p className="leading-relaxed lg:text-lg text-md font-sans font-semibold tracking-wide">
                 En esta parte nos ponemos a implementar todo y a construir la
@@ -85,7 +85,7 @@ const Steps = () => {
               </div>
             </div>
           </div>
-          <div className='lg:pr-20 mb-8'>
+          <div className='lg:pr-20 mb-20'>
             <div  className='flex flex-row border border-green-500 shadow-lg shadow-green-400 hover:scale-105 duration-300 rounded-3xl p-4'>
               <div className="flex-shrink-0 w-24 h-24 my-auto bg-indigo-100 text-green-500 rounded-full inline-flex items-center justify-center">
                 <svg
@@ -103,7 +103,7 @@ const Steps = () => {
               </div>
               <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-extrabold font-mono mb-1 lg:text-2xl text-xl uppercase">
-                Pruebas y Entrega
+                Resultados y Entrega
               </h2>
               <p className="leading-relaxed lg:text-lg text-md font-sans font-semibold tracking-wide">
                 Finalmente, la solución se prueba (con estandares de calidad) y
