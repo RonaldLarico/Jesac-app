@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
 
         <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
           <Link
-            href='#'
+            href='#contact'
             className='group-hover:bg-cyan-600 p-4 rounded-xl flex justify-center text-cyan-600 group-hover:text-white transition-colors'>
             <MdOutlineContactPhone className='lg:text-3xl text-2xl' />
           </Link>

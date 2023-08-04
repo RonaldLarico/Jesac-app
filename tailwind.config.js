@@ -12,7 +12,10 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bounce: 'bounce 3s infinite'
+        bounce: 'bounce 3s infinite',
+        'trans-top': 'trans-top 1.5s ease-in-out infinite',
+        'spin-slow': 'spin 6s linear infinite',
+        'spin-delay': 'spin 6s linear infinite -9s',
       },
       keyframes: {
         'trans-top': {
@@ -20,9 +23,6 @@ module.exports = {
           '50%': { transform: 'translate(0)' }
         }
       },
-      animation: {
-        'trans-top': 'trans-top 1.5s ease-in-out infinite'
-      }
     },
   },
   plugins: [],
