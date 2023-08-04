@@ -75,7 +75,7 @@ const Services = () => {
             </div>
             <button
               onClick={() => setDesignModal(true)}
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>
@@ -107,7 +107,7 @@ const Services = () => {
             </div>
             <button
               onClick={() => setStoreModal(true)}
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>
@@ -139,7 +139,7 @@ const Services = () => {
               </div>
             </div>
             <button
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>
@@ -170,7 +170,7 @@ const Services = () => {
               </div>
             </div>
             <button
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>
@@ -202,7 +202,7 @@ const Services = () => {
               </div>
             </div>
             <button
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>
@@ -234,7 +234,7 @@ const Services = () => {
               </div>
             </div>
             <button
-              className="relative w-full text-white bg-cyan-600 hover:bg-cyan-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
+              className="relative w-full text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-md px-5 py-2.5 text-center">
               Ver mas
             </button>
           </div>

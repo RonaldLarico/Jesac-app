@@ -6,8 +6,9 @@ import Link from 'next/link';
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-import { BsFacebook, BsTiktok } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import { FaTiktok } from 'react-icons/fa';
 
 const Banner = () => {
 
@@ -62,7 +63,7 @@ const Banner = () => {
               href='https://wa.me/+51957033871?text=Hola,%20deseo%20realizar%20una%20consulta%20'
               target='_blank'
               rel='noreferrer'>
-              <div className='text-cyan-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
+              <div className='text-green-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
                 <IoLogoWhatsapp />
               </div>
             </Link>
@@ -70,19 +71,19 @@ const Banner = () => {
               href='https://www.facebook.com/metalurgica.jesac'
               target='_blank'
               rel='noreferrer'>
-              <div className='text-cyan-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
+              <div className='text-blue-700 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
                 <BsFacebook />
               </div>
             </Link>
             <Link
               href='https://www.tiktok.com/@juvefrank'
               target='_blank'>
-              <div className='text-cyan-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
-              <BsTiktok />
+              <div className='text-gray-950 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
+              <FaTiktok />
               </div>
             </Link>
           </div>
-          <button className='uppercase font-bold font-sans rounded-xl lg:text-xl md:text-2xl text-lg py-1 px-5 text-gray-800 dark:text-gray-300 bg-cyan-600 hover:bg-cyan-500'>
+          <button className='uppercase font-bold font-sans rounded-xl text-lg py-2 px-8 text-gray-300 bg-indigo-600 hover:scale-105 duration-300'>
             Contacto
           </button>
       </div>

@@ -22,9 +22,9 @@ const Steps = () => {
             //style={{ width: "650px", height: "600px" }}
             ></lottie-player>
         </div>
-        <div className='p-6 mt-24 text-gray-500'>
-          <h2 className='uppercase mb-4 font-sans font-extrabold text-xl text-gray-600'>Sobre nosotros</h2>
-          <h1 className='font-extrabold text-5xl mb-4 text-sky-900'>Impulsamos tu negocio</h1>
+        <div className='p-6 mt-24 text-gray-600 dark:text-gray-300 tracking-wide'>
+          <h2 className='uppercase mb-4 font-sans font-extrabold text-xl'>Sobre nosotros</h2>
+          <h1 className='font-extrabold text-5xl mb-4 text-sky-900 dark:text-gray-100'>Impulsamos tu negocio</h1>
           <p className='font-semibold text-2xl mb-4'>Centramos esfuerzos en conocer la marca de nuestros clientes y llevar al siguiente nivel.</p>
           <p className='font-semibold text-2xl mb-4'>JESAC digital nace con la misión principal de ofrecer resultados inmediatos a sus clientes usando las mejores herramientas disponibles.</p>
           <button className='bg-indigo-600 text-gray-300 mt-10 px-10 py-2 text-xl font-bold font-mono hover:scale-105 duration-300 rounded-lg uppercase'>
@@ -47,7 +47,7 @@ const Steps = () => {
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
               </div>
-              <div className="flex-grow pl-4 text-gray-500 dark:text-gray-300">
+              <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-bold font-mono mb-1 lg:text-2xl text-xl uppercase">
                 Diseño y Planeación
               </h2>
@@ -74,7 +74,7 @@ const Steps = () => {
                   <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                 </svg>
               </div>
-              <div className="flex-grow pl-4 text-gray-500 dark:text-gray-300">
+              <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-bold font-mono mb-1 lg:text-2xl text-xl uppercase">
                 Desarrollo
               </h2>
@@ -101,7 +101,7 @@ const Steps = () => {
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
               </div>
-              <div className="flex-grow pl-4 text-gray-500 dark:text-gray-300">
+              <div className="flex-grow pl-4 text-gray-700 dark:text-gray-300">
               <h2 className="font-extrabold font-mono mb-1 lg:text-2xl text-xl uppercase">
                 Pruebas y Entrega
               </h2>
