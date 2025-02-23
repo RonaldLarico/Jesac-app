@@ -1,0 +1,201 @@
+{
+  "home": {
+    "logo": "Logoit"
+  },
+  "common": {
+    "logo": "Logotipoit"
+  },
+  "banner": {
+    "title": "Sviluppo software",
+    "animatedText": {
+      "text1": "Progettazione web di alto livello.",
+      "text2": "Progettazione di chatbot intelligenti.",
+      "text3": "Sviluppo di software personalizzato."
+    },
+    "typedText": {
+      "text1": "METALLURGIA",
+      "text2": "SOFTWARE",
+      "text3": "INDUSTRIE"
+    },
+    "contactButton": "Contatto"
+  },
+  "sidebar": {
+    "home": "Home",
+    "services": "Servizi",
+    "about": "Chi siamo",
+    "contact": "Contatto",
+    "metal": "Metallurgica",
+    "lightMode": "Modalità Chiara",
+    "darkMode": "Modalità Scura",
+    "logout": "Disconnettersi"
+  },
+  "services": {
+    "title": "Progettato per team aziendali come il tuo",
+    "description": "Ci concentriamo su mercati in cui tecnologia, innovazione e capitale sbloccano valore a lungo termine.",
+    "cards": [
+      {
+        "title": "Progettazione di pagine web",
+        "description": "Design web moderno e attraente con supporto premium.",
+        "features": [
+          "Design attraente",
+          "Caricamento veloce",
+          "Supporto permanente",
+          "Sicurezza avanzata",
+          "Professionalità garantita"
+        ],
+        "animationUrl": "https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json",
+        "button": "Scopri di più"
+      },
+      {
+        "title": "Negozi virtuali (Ecommerce)",
+        "description": "Negozi gestibili e adattati ai dispositivi mobili.",
+        "features": [
+          "Design reattivo",
+          "Catalogo prodotti",
+          "Gestione semplice",
+          "Integrazione sicura"
+        ],
+        "animationUrl": "https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json",
+        "button": "Scopri di più"
+      },
+      {
+        "title": "ChatBot intelligenti IA",
+        "description": "ChatBot personalizzati con integrazione IA.",
+        "features": [
+          "Risposte rapide",
+          "Integrazione social media",
+          "Supporto 24/7",
+          "Automazione avanzata"
+        ],
+        "animationUrl": "https://lottie.host/bc1995c9-cada-46a8-b22e-9a9a32f806ee/axb3bpv8Wi.json",
+        "button": "Scopri di più"
+      },
+      {
+        "title": "Sviluppo di applicazioni mobili",
+        "description": "App veloci e sicure per iOS e Android.",
+        "features": [
+          "Interfaccia intuitiva",
+          "Alte prestazioni",
+          "Aggiornamenti in tempo reale",
+          "Supporto multipiattaforma"
+        ],
+        "animationUrl": "https://lottie.host/c6bf9ec8-6b66-4cd4-946b-9aa66b580f51/2HTZVjVwBI.json",
+        "button": "Scopri di più"
+      },
+      {
+        "title": "Sviluppo software su misura",
+        "description": "Software personalizzato per le esigenze aziendali.",
+        "features": [
+          "Personalizzazione completa",
+          "Scalabilità garantita",
+          "Supporto dedicato",
+          "Integrazioni flessibili"
+        ],
+        "animationUrl": "https://lottie.host/bf0afe68-5ad4-4fc1-91e1-44270163d284/b8F57gUDTT.json",
+        "button": "Scopri di più"
+      },
+      {
+        "title": "Fatturazione elettronica",
+        "description": "Sistema di fatturazione elettronica sicuro e facile da usare.",
+        "features": [
+          "Conforme alle normative",
+          "Integrazione ERP",
+          "Report in tempo reale",
+          "Archiviazione sicura"
+        ],
+        "animationUrl": "https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json",
+        "button": "Scopri di più"
+      }
+    ]
+  },
+  "plans": {
+    "economic": "PIANO ECONOMICO - Progettazione di pagine web",
+    "business": "PIANO AZIENDALE - Progettazione di pagine web",
+    "corporate": "PIANO CORPORATIVO - Progettazione di pagine web",
+    "price": "/pagamento unico",
+    "features": {
+      "responsiveDesign": "Progettazione web reattiva per dispositivi mobili",
+      "freeHosting": "Hosting GRATUITO per 1 anno",
+      "domain": "Dominio",
+      "ssl": "Certificato di sicurezza SSL",
+      "seo": "Posizionamento SEO di base",
+      "socialMedia": "Collegamenti ai social media",
+      "individualConfig": "Configurazione individuale",
+      "noSetup": "Nessuna configurazione o costi nascosti",
+      "teamSize": "Dimensione del team",
+      "premiumSupport": "Supporto premium",
+      "freeUpdates": "Aggiornamenti gratuiti"
+    },
+    "button": "Richiedi"
+  },
+  "storeModal": {
+    "title": "Negozi virtuali",
+    "plans": {
+      "price": "/Mese",
+      "button": "Richiedi",
+      "economic": {
+        "name": "PIANO ECONOMICO - Ecommerce",
+        "features": [
+          "Configurazione individuale",
+          "Nessun costo di installazione",
+          "Team di 10 sviluppatori",
+          "Supporto premium: 24 mesi",
+          "Aggiornamenti gratuiti: 24 mesi"
+        ]
+      },
+      "business": {
+        "name": "PIANO AZIENDALE - Ecommerce",
+        "features": [
+          "Configurazione individuale",
+          "Nessun costo nascosto",
+          "Team di 20 sviluppatori",
+          "Supporto premium: 36 mesi",
+          "Aggiornamenti gratuiti: 36 mesi"
+        ]
+      },
+      "corporate": {
+        "name": "PIANO CORPORATIVO - Ecommerce",
+        "features": [
+          "Configurazione avanzata",
+          "Integrazione aziendale",
+          "Team illimitato di sviluppatori",
+          "Supporto premium: 48 mesi",
+          "Aggiornamenti gratuiti: 48 mesi",
+          "Funzionalità aggiuntive esclusive"
+        ]
+      }
+    }
+  },
+  "steps": {
+    "aboutUs": "Chi siamo",
+    "boostBusiness": "Diamo slancio al tuo business",
+    "brandFocus": "Ci concentriamo nel conoscere il marchio dei nostri clienti e portarlo al livello successivo.",
+    "mission": "JESAC digital nasce con la missione principale di offrire risultati immediati ai propri clienti utilizzando i migliori strumenti disponibili.",
+    "contact": "Contatto",
+    "analysisPlanning": {
+      "title": "Analisi e Pianificazione",
+      "description": "Con le informazioni ottenute, pianifichiamo e progettiamo la soluzione secondo le tue esigenze."
+    },
+    "developmentDesign": {
+      "title": "Sviluppo e Design",
+      "description": "Implementiamo tutto e costruiamo la soluzione con la tecnologia più adatta al tuo progetto."
+    },
+    "resultsDelivery": {
+      "title": "Risultati e Consegna",
+      "description": "Infine, la soluzione viene testata (con standard di qualità) e se supera i test, il prodotto ti viene consegnato."
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "description": "Desideriamo far parte del tuo successo e portare la tua azienda a livelli mai visti prima.",
+    "form": {
+      "contact": "Contatto",
+      "name": "Nome",
+      "phone": "Telefono",
+      "email": "Email",
+      "title": "Titolo",
+      "message": "Messaggio",
+      "submit": "Invia"
+    }
+  }
+}

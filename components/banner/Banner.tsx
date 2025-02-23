@@ -1,112 +1,152 @@
 "use client";
-import React, { useRef }from "react";
-import Typed from 'react-typed';
-
-import Link from 'next/link';
-
+import React, { useRef } from "react";
+import Typed from "react-typed";
+import Link from "next/link";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-
-import { BsFacebook } from 'react-icons/bs';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { FaTiktok } from 'react-icons/fa';
+import { BsFacebook } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaTiktok } from "react-icons/fa";
+import { useTranslations } from "next-intl";
+import { LazyMotion, domMax, m } from "framer-motion";
 
 const Banner = () => {
-
+  const t = useTranslations("banner");
   const ref = useRef(null);
-  React.useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
 
   const [text] = useTypewriter({
     words: [
-      "Diseño web de alto nivel.",
-      "Diseños de chatbots inteligentes.",
-      "Desarrollo de software a medida.",
+      t("animatedText.text1"),
+      t("animatedText.text2"),
+      t("animatedText.text3"),
     ],
     loop: true,
     typeSpeed: 30,
     deleteSpeed: 30,
     delaySpeed: 2000,
   });
-  //container flex items-center justify-center dark:bg-gray-900 max-w-screen-xl px-4 py-8 lg:px-6 mx-auto md:w-auto
+
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { staggerChildren: 0.2, duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, y: 50, scale: 0.8 },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } },
+  };
+
   return (
     <section id="home" className="flex items-center justify-center bg-orange-50 dark:bg-sky-950">
-      <div className="max-w-screen-xl px-4 lg:px-6 mx-auto md:w-auto">
-      {/* <img src='/wave.png' className='absolute animate-ping lg:top-[30%] top-[50%] left-[10%] lg:left-[20%] lg:w-52 w-20'></img>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[45%] top-56'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-96 top-3/4'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-1/2 top-[60%]'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-[70%] top-[75%]'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-3/4 top-60'/>
-      <img src='/Ellipse.png' className='animate-ping z-20 w-6 absolute left-60 top-1/2'/> */}
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px]  text-center justify-center items-center mx-auto mb-10 lg:mt-0 mt-0">
-      <div className="lg:text-8xl text-7xl">
-      <Typed
-        className="font-bold font-mono text-center dark:text-gray-300 text-black md:text-2xl text-xl lg:text-3xl mt-2"
-        strings={['METALÚRGICA', 'SOFTWARE', 'INDUSTRIAS']}
-        typeSpeed={100}
-        backSpeed={40}
-        loop
-          />
-        <h1 className="font-extrabold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text">
-          JESAC
-        </h1>
-      <h2 className="font-sans bg-gradient-to-r from-amber-400 via-rose-500 to-fuchsia-500 text-transparent bg-clip-text text-4xl lg:text-6xl font-bold">
-        DESARROLLO DE SOFTWARE
-      <p className="font-mono text-center dark:text-gray-300 text-black md:text-2xl text-xl lg:text-3xl font-bold mt-2">
-        {text}<Cursor cursorBlinking cursorStyle="|"cursorColor="#ffaa17" />
-      </p>
-      </h2>
-      {/* icons banner page */}
-      <div className='flex items-center justify-between max-w-[330px] m-auto mt-8'>
-            <Link
-              href='https://wa.me/+51957033871?text=Hola,%20deseo%20realizar%20una%20consulta%20'
-              target='_blank'
-              rel='noreferrer'>
-              <div className='text-green-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
-                <IoLogoWhatsapp />
-              </div>
-            </Link>
-            <Link
-              href='https://www.facebook.com/metalurgica.jesac'
-              target='_blank'
-              rel='noreferrer'>
-              <div className='text-blue-700 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
-                <BsFacebook />
-              </div>
-            </Link>
-            <Link
-              href='https://www.tiktok.com/@juvefrank'
-              target='_blank'>
-              <div className='text-gray-950 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-125 ease-in duration-300 text-4xl'>
-              <FaTiktok />
-              </div>
-            </Link>
-          </div>
-          <button className='uppercase font-bold font-sans rounded-xl text-lg py-2 px-8 text-gray-300 bg-indigo-600 hover:scale-105 duration-300'>
-            Contacto
-          </button>
-      </div>
+      <LazyMotion features={domMax} strict>
+        <m.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          className="grid lg:grid-cols-2 grid-cols-1 lg:h-[800px] text-center justify-center items-center mx-auto mb-10 md:mt-0 mt-5"
+        >
+          <m.div
+            variants={childVariants}
+            className="lg:text-8xl text-7xl"
+            whileHover={{ scale: 1.1, rotate: [0, 5, -5, 0] }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+          >
+            <Typed
+              className="font-bold font-mono text-center dark:text-gray-300 text-black md:text-2xl text-xl lg:text-3xl mt-2"
+              strings={[t("typedText.text1"), t("typedText.text2"), t("typedText.text3")]}
+              typeSpeed={90}
+              backSpeed={30}
+              loop
+            />
+            <m.h1
+              initial={{ scale: 0, rotate: -10 }}
+              whileInView={{ scale: 1.3, rotate: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="font-extrabold bg-gradient-to-r from-green-500 to-blue-700 text-transparent bg-clip-text"
+            >
+              JESAC
+            </m.h1>
+            <m.h2
+              variants={childVariants}
+              className="font-sans bg-gradient-to-r from-amber-400 via-rose-500 to-fuchsia-500 text-transparent bg-clip-text text-4xl lg:text-6xl font-bold"
+            >
+              {t("title")}
+              <p className="font-mono text-center dark:text-gray-300 text-black md:text-2xl text-xl lg:text-3xl font-bold mt-2">
+                {text}
+                <Cursor cursorBlinking cursorStyle="|" cursorColor="#ffaa17" />
+              </p>
+            </m.h2>
+            <m.div
+              className="flex items-center justify-between max-w-[330px] m-auto mt-8"
+              variants={childVariants}
+              animate={{ rotate: [0, 10, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <Link href="https://wa.me/+51957033871?text=Hola,%20deseo%20realizar%20una%20consulta%20" target="_blank" rel="noreferrer">
+                <m.div
+                  whileHover={{ scale: 1.3, rotate: 15 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-green-600 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer text-4xl"
+                >
+                  <IoLogoWhatsapp />
+                </m.div>
+              </Link>
+              <Link href="https://www.facebook.com/metalurgica.jesac" target="_blank" rel="noreferrer">
+                <m.div
+                  whileHover={{ scale: 1.3, rotate: -15 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-blue-700 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer text-4xl"
+                >
+                  <BsFacebook />
+                </m.div>
+              </Link>
+              <Link href="https://www.tiktok.com/@juvefrank" target="_blank">
+                <m.div
+                  whileHover={{ scale: 1.3, rotate: 15 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-gray-950 rounded-full shadow-xl shadow-gray-400 p-4 cursor-pointer text-4xl"
+                >
+                  <FaTiktok />
+                </m.div>
+              </Link>
+            </m.div>
+            <m.button
+              whileHover={{ scale: 1.15, rotate: 5 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.4 }}
+              className="uppercase font-bold font-sans rounded-xl text-lg py-2 px-8 text-gray-300 bg-indigo-600 hover:scale-105 duration-300"
+            >
+              {t("contactButton")}
+            </m.button>
+          </m.div>
 
-      <div className="animate-trans-top mb-28 mx-auto lg:mt-auto md:mt-16 mt-10 lg:w-[650px] w-[350px] lg:h-[600px] h-[300]">
-      <lottie-player
-          id="firstLottie"
-          ref={ref}
-          autoplay
-          loop
-          mode="normal"
-          src="https://lottie.host/0be35802-67ac-433c-8f57-bf2c9804c39c/lYZxWeL9uo.json"
-          //style={{ width: "650px", height: "600px" }}
-          ></lottie-player>
-        {/* <Image
-        src='/icon-jesac.png'
-        width={500}
-        height={500}
-        alt='icon'
-        className='animate-trans-top mt-10 mx-auto lg:mt-auto lg:w-auto w-[300px]'/> */}
-      </div>
-    </div>
-    </div>
+          <m.div
+            initial={{ opacity: 0, y: 50, rotate: -5 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+            whileHover={{ scale: 1.05 }}
+            className="animate-trans-top mb-28 mx-auto lg:mt-auto md:mt-16 mt-10 lg:w-[650px] w-[350px] lg:h-[600px] h-[300]"
+          >
+            <lottie-player
+              id="firstLottie"
+              ref={ref}
+              autoplay
+              loop
+              mode="normal"
+              src="https://lottie.host/0be35802-67ac-433c-8f57-bf2c9804c39c/lYZxWeL9uo.json"
+            ></lottie-player>
+          </m.div>
+        </m.div>
+      </LazyMotion>
     </section>
   );
 };

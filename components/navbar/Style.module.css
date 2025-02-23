@@ -1,5 +1,5 @@
 
-.bottomNav {
+/* .bottomNav {
     @apply fixed right-12 top-10 h-14 w-0 translate-x-[50%] duration-500 bg-gray-100 p-3 rounded-md
     transition-[width,right] delay-[1s,2.5s];
 }
@@ -31,4 +31,4 @@
 
 .icon:hover{
     @apply -translate-y-1 scale-110;
-}
+} */

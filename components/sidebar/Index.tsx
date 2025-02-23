@@ -1,15 +1,15 @@
-import React from 'react';
-import { useState } from 'react';
-
-import Link from 'next/link';
-
+"use client";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
-import { FiDatabase } from "react-icons/fi"
-import { BiLogOut } from "react-icons/bi"
-import { RiContactsLine } from 'react-icons/ri'
-import { MdOutlineContactPhone } from 'react-icons/md'
-import { BsMeta } from 'react-icons/bs'
-import DarkMode from '../darkMode/Index';
+import { FiDatabase } from "react-icons/fi";
+import { BiLogOut, BiMenuAltRight } from "react-icons/bi";
+import { RiContactsLine } from "react-icons/ri";
+import { MdOutlineContactPhone } from "react-icons/md";
+import { BsMeta } from "react-icons/bs";
+import DarkMode from "../darkMode/Index";
+import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 
 interface SidebarPros {
   menu: boolean;
@@ -17,94 +17,110 @@ interface SidebarPros {
 }
 
 const Sidebar: React.FC<SidebarPros> = ({ menu, setMenu }) => {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const t = useTranslations("sidebar");
 
-  const [modo, setModo] = useState('modo Ligth')
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleOnClose = () => {
     setMenu(!menu);
-  }
+  };
 
   const handleOnModo = () => {
-    setModo('modo Dark')
-  }
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const handleToggleSidebar = () => setMenu((prev) => !prev)
+
+  if (!mounted) return null;
 
   return (
-    <div className={`bg-indigo-950/90 fixed lg:left-0 top-0 lg:w-32 w-[116px] h-full flex flex-col lg:justify-between rounded-tr-2xl rounded-br-2xl z-50 transition-all
-      ${menu ? 'left-0' : '-left-full'}`}>
-      <div>
-      <ul className='pl-2 lg:mt-20 md:mt-16 mt-0'>
-        <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <Link
-            href='#home'
-            className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-            <IoHomeOutline className='lg:text-3xl text-2xl' />
-          </Link>
-          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Inicio</h2>
-        </li>
+    <>
+    {!menu && (
+      <button
+        onClick={handleToggleSidebar}
+        className="hidden lg:flex fixed top-1/2 transform -translate-y-1/2 left-2 z-50 bg-cyan-600 hover:bg-cyan-700 text-white p-2 rounded-full transition-all"
+      >
+        <BiMenuAltRight className="text-3xl" />
+      </button>
+    )}
+    {menu && (
+    <div
+      className={`dark:bg-orange-50 bg-sky-950 fixed top-1/2 transform -translate-y-1/2
+      flex flex-col justify-between rounded-tr-2xl rounded-br-2xl z-50
+      transition-all duration-300 ease-in-out
+      ${menu ? "left-0" : "-left-full"} lg:left-0`}
+    >
+      <div className="mt-3 mb-3">
+        <ul className="pl-2 space-y-2">
+          {[
+            { href: "#home", icon: <IoHomeOutline />, label: t("home") },
+            { href: "#services", icon: <FiDatabase />, label: t("services") },
+            { href: "#about", icon: <RiContactsLine />, label: t("about") },
+            { href: "#contact", icon: <MdOutlineContactPhone />, label: t("contact") },
+            {
+              href: "https://jesac.onrender.com/",
+              icon: <BsMeta />,
+              label: t("metal"),
+              target: "_blank",
+            },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="hover:bg-orange-50 dark:hover:bg-sky-950 p-2 rounded-tl-2xl rounded-bl-2xl group transition-colors"
+            >
+              <Link
+                href={item.href}
+                target={item.target || "_self"}
+                onClick={handleToggleSidebar}
+                className="group-hover:bg-sky-700 p-2 rounded-xl flex justify-center text-cyan-500 group-hover:text-orange-50 transition-colors"
+              >
+                {React.cloneElement(item.icon, { className: "text-2xl" })}
+              </Link>
+              <h2 className="flex justify-center text-orange-50 dark:text-sky-950 group-hover:text-sky-900 group-hover:dark:text-orange-50 text-xs font-bold font-mono uppercase">
+                {item.label}
+              </h2>
+            </li>
+          ))}
 
-        <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <Link
-            href='#services'
-            className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-            <FiDatabase className='lg:text-3xl text-2xl' />
-          </Link>
-          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Servicios</h2>
-        </li>
+          <li className="text-center hover:bg-orange-50 dark:hover:bg-sky-950 p-2 rounded-tl-2xl rounded-bl-2xl group transition-colors">
+            <button
+              onClick={() => {
+                handleOnModo();
+                handleToggleSidebar();
+              }}
+              className="group-hover:bg-sky-700 p-2 rounded-xl transition-colors flex flex-col items-center"
+            >
+              <DarkMode />
+              <h2 className="flex justify-center mt-3 text-orange-50 dark:text-sky-900 group-hover:text-orange-50 text-xs font-bold font-mono uppercase">
+                {theme === "dark" ? t("lightMode") : t("darkMode")}
+              </h2>
+            </button>
+          </li>
 
-        <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <Link
-            href='#about'
-            className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-            <RiContactsLine className='lg:text-3xl text-2xl' />
-          </Link>
-          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Nosotros</h2>
-        </li>
-
-        <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <Link
-            href='#contact'
-            className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-            <MdOutlineContactPhone className='lg:text-3xl text-2xl' />
-          </Link>
-          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Contacto</h2>
-        </li>
-
-
-        <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <Link
-            href='https://jesac.onrender.com/'
-            target='_blank'
-            className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-            <BsMeta className='lg:text-3xl text-2xl' />
-          </Link>
-          <h2 className='flex justify-center text-gray-200 text-xs font-bold font-mono uppercase'>Metalurgica</h2>
-        </li>
-
-        <li className='text-center hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
-          <button
-            className='group-hover:bg-indigo-600 p-2 rounded-xl text-indigo-500 group-hover:text-white transition-colors'>
-            <DarkMode />
-          <h2 onClick={handleOnModo} className='flex justify-center mt-3 text-gray-200 text-xs font-bold font-mono uppercase'>{modo}
-          </h2>
-          </button>
-        </li>
-      </ul>
-      </div>
-
-      <div>
-        <ul className='lg:pl-4 pl-1 lg:mt-32 md:mt-52 mt-9 '>
-          <li className='hover:bg-gray-900 p-4 rounded-tl-xl rounded-bl-xl group transition-colors'>
+          <li className="text-center hover:bg-orange-50 dark:hover:bg-sky-950 p-2 rounded-tl-2xl rounded-bl-2xl group transition-colors">
             <Link
-              href=''
-              onClick={handleOnClose}
-              className='group-hover:bg-indigo-600 p-4 rounded-xl flex justify-center text-indigo-500 group-hover:text-white transition-colors'>
-              <BiLogOut className='lg:text-3xl text-2xl' />
+              href=""
+              onClick={() => {
+                handleOnClose();
+                handleToggleSidebar();
+              }}
+              className="group-hover:bg-sky-700 p-2 rounded-xl flex justify-center text-cyan-500 group-hover:text-white transition-colors"
+            >
+              <BiLogOut className="text-2xl" />
             </Link>
-            <h2 className='text-center text-gray-200 text-xs font-bold font-mono uppercase'>Salir</h2>
+            <h2 className="text-center text-orange-50 dark:text-sky-950 group-hover:text-sky-900 group-hover:dark:text-orange-50 text-xs font-bold font-mono uppercase">
+              {t("logout")}
+            </h2>
           </li>
         </ul>
       </div>
     </div>
+    )}
+    </>
   );
 };
 

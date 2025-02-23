@@ -1,0 +1,201 @@
+{
+  "home": {
+    "logo": "Logoen"
+  },
+  "common": {
+    "logo": "Logotipoen"
+  },
+  "banner": {
+    "title": "Software Development",
+    "animatedText": {
+      "text1": "High-level web design.",
+      "text2": "Intelligent chatbot designs.",
+      "text3": "Custom software development."
+    },
+    "typedText": {
+      "text1": "METALLURGICAL",
+      "text2": "SOFTWARE",
+      "text3": "INDUSTRIES"
+    },
+    "contactButton": "Contact"
+  },
+  "sidebar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "metal": "Metallurgical",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "logout": "Logout"
+  },
+  "services": {
+    "title": "Designed for business teams like yours",
+    "description": "We focus on markets where technology, innovation, and capital unlock long-term value.",
+    "cards": [
+      {
+        "title": "Web Page Design",
+        "description": "Modern and attractive web design with premium support.",
+        "features": [
+          "Attractive design",
+          "Fast loading",
+          "Permanent support",
+          "Advanced security",
+          "Guaranteed professionalism"
+        ],
+        "animationUrl": "https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json",
+        "button": "See more"
+      },
+      {
+        "title": "Virtual Stores (Ecommerce)",
+        "description": "Manageable stores adapted to mobile devices.",
+        "features": [
+          "Responsive design",
+          "Product catalog",
+          "Easy management",
+          "Secure integration"
+        ],
+        "animationUrl": "https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json",
+        "button": "See more"
+      },
+      {
+        "title": "Intelligent AI ChatBots",
+        "description": "Personalized ChatBots with AI integration.",
+        "features": [
+          "Quick responses",
+          "Social media integration",
+          "24/7 support",
+          "Advanced automation"
+        ],
+        "animationUrl": "https://lottie.host/bc1995c9-cada-46a8-b22e-9a9a32f806ee/axb3bpv8Wi.json",
+        "button": "See more"
+      },
+      {
+        "title": "Mobile Application Development",
+        "description": "Fast and secure apps for iOS and Android.",
+        "features": [
+          "Intuitive interface",
+          "High performance",
+          "Real-time updates",
+          "Cross-platform support"
+        ],
+        "animationUrl": "https://lottie.host/c6bf9ec8-6b66-4cd4-946b-9aa66b580f51/2HTZVjVwBI.json",
+        "button": "See more"
+      },
+      {
+        "title": "Custom Software Development",
+        "description": "Tailor-made software for your business needs.",
+        "features": [
+          "Full customization",
+          "Guaranteed scalability",
+          "Dedicated support",
+          "Flexible integrations"
+        ],
+        "animationUrl": "https://lottie.host/bf0afe68-5ad4-4fc1-91e1-44270163d284/b8F57gUDTT.json",
+        "button": "See more"
+      },
+      {
+        "title": "Electronic Billing",
+        "description": "Secure and user-friendly electronic billing system.",
+        "features": [
+          "Regulation compliant",
+          "ERP integration",
+          "Real-time reporting",
+          "Secure storage"
+        ],
+        "animationUrl": "https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json",
+        "button": "See more"
+      }
+    ]
+  },
+  "plans": {
+    "economic": "ECONOMIC PLAN - Web page design",
+    "business": "BUSINESS PLAN - Web page design",
+    "corporate": "CORPORATE PLAN - Web page design",
+    "price": "/single payment",
+    "features": {
+      "responsiveDesign": "Mobile responsive web design",
+      "freeHosting": "FREE hosting for 1 year",
+      "domain": "Domain",
+      "ssl": "SSL security certificate",
+      "seo": "Basic SEO positioning",
+      "socialMedia": "Social media links",
+      "individualConfig": "Individual configuration",
+      "noSetup": "No setup, or hidden fees",
+      "teamSize": "Team size",
+      "premiumSupport": "Premium support",
+      "freeUpdates": "Free updates"
+    },
+    "button": "Request"
+  },
+  "storeModal": {
+    "title": "Virtual Stores",
+    "plans": {
+      "price": "/Month",
+      "button": "Request",
+      "economic": {
+        "name": "ECONOMIC PLAN - Ecommerce",
+        "features": [
+          "Individual configuration",
+          "No setup fees",
+          "Team size: 10 developers",
+          "Premium support: 24 months",
+          "Free updates: 24 months"
+        ]
+      },
+      "business": {
+        "name": "BUSINESS PLAN - Ecommerce",
+        "features": [
+          "Individual configuration",
+          "No hidden fees",
+          "Team of 20 developers",
+          "Premium support: 36 months",
+          "Free updates: 36 months"
+        ]
+      },
+      "corporate": {
+        "name": "CORPORATE PLAN - Ecommerce",
+        "features": [
+          "Advanced configuration",
+          "Enterprise integration",
+          "Unlimited developer team",
+          "Premium support: 48 months",
+          "Free updates: 48 months",
+          "Exclusive additional features"
+        ]
+      }
+    }
+  },
+  "steps": {
+    "aboutUs": "About us",
+    "boostBusiness": "We boost your business",
+    "brandFocus": "We focus on understanding our clients' brand and taking it to the next level.",
+    "mission": "JESAC digital was born with the main mission of offering immediate results to its clients using the best tools available.",
+    "contact": "Contact",
+    "analysisPlanning": {
+      "title": "Analysis and Planning",
+      "description": "With the required information obtained, we plan and design the solution according to your needs."
+    },
+    "developmentDesign": {
+      "title": "Development and Design",
+      "description": "We implement everything and build the solution with the most suitable technology for your project."
+    },
+    "resultsDelivery": {
+      "title": "Results and Delivery",
+      "description": "Finally, the solution is tested (with quality standards) and if it passes, the product is delivered to you."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We want to be part of your success and take your company to unseen levels.",
+    "form": {
+      "contact": "Contact",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "title": "Title",
+      "message": "Message",
+      "submit": "Send"
+    }
+  }
+}

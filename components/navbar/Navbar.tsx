@@ -1,25 +1,24 @@
-"use client";
-import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import LocaleSwitcher from '@/components/utils/localeSwitcher';
 
 const NavBar: React.FC = () => {
+  const t = useTranslations('common');
 
   return (
-    <div className="lg:pl-[128px] bg-cyan-100 dark:bg-sky-950">
-      <nav className='flex invisible lg:visible p-6 justify-between border-b w-full bg-purple-700/50 rounded-bl-2xl rounded-br-2xl'>
-        <div className="">
+    <div className="fixed w-full z-30">
+      <nav className="flex invisible lg:visible md:p-2 p-2 justify-between w-full bg-sky-700/90">
+        <div>
           <Link href="#home">
-            <h1 className="text-2xl uppercase font-bold">Logo</h1>
+            <h1 className="text-2xl uppercase font-bold">{t('logo')}</h1>
           </Link>
         </div>
-        <div className='flex items-center'>
-          <button className="bg-green-700 px-6 py-1 hover:bg-white rounded-xl uppercase font-bold">
-            SOFTWARE
-          </button>
+        <div className="flex items-center">
+          <LocaleSwitcher />
         </div>
       </nav>
     </div>
   );
-}
+};
 
 export default NavBar;

@@ -1,0 +1,201 @@
+{
+  "home": {
+    "logo": "Logoja"
+  },
+  "common": {
+    "logo": "Logotipoja"
+  },
+  "banner": {
+    "title": "ソフトウェア開発",
+    "animatedText": {
+      "text1": "ハイレベルなウェブデザイン。",
+      "text2": "インテリジェントなチャットボットデザイン。",
+      "text3": "カスタムソフトウェア開発。"
+    },
+    "typedText": {
+      "text1": "冶金",
+      "text2": "ソフトウェア",
+      "text3": "産業"
+    },
+    "contactButton": "連絡先"
+  },
+  "sidebar": {
+    "home": "ホーム",
+    "services": "サービス",
+    "about": "私たちについて",
+    "contact": "お問い合わせ",
+    "metal": "冶金",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "logout": "ログアウト"
+  },
+  "services": {
+    "title": "あなたのようなビジネスチーム向けに設計されています",
+    "description": "テクノロジー、イノベーション、資本が長期的な価値を引き出す市場に焦点を当てています。",
+    "cards": [
+      {
+        "title": "ウェブページデザイン",
+        "description": "プレミアムサポート付きのモダンで魅力的なウェブデザイン。",
+        "features": [
+          "魅力的なデザイン",
+          "高速読み込み",
+          "常時サポート",
+          "高度なセキュリティ",
+          "保証されたプロフェッショナリズム"
+        ],
+        "animationUrl": "https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json",
+        "button": "もっと見る"
+      },
+      {
+        "title": "バーチャルストア (Ecommerce)",
+        "description": "モバイル対応の管理可能なストア。",
+        "features": [
+          "レスポンシブデザイン",
+          "製品カタログ",
+          "簡単な管理",
+          "安全な統合"
+        ],
+        "animationUrl": "https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json",
+        "button": "もっと見る"
+      },
+      {
+        "title": "インテリジェントAIチャットボット",
+        "description": "AI統合によるパーソナライズされたチャットボット。",
+        "features": [
+          "迅速な応答",
+          "SNS統合",
+          "24/7サポート",
+          "高度な自動化"
+        ],
+        "animationUrl": "https://lottie.host/bc1995c9-cada-46a8-b22e-9a9a32f806ee/axb3bpv8Wi.json",
+        "button": "もっと見る"
+      },
+      {
+        "title": "モバイルアプリ開発",
+        "description": "iOSとAndroid向けの高速かつ安全なアプリ。",
+        "features": [
+          "直感的なインターフェース",
+          "高性能",
+          "リアルタイムアップデート",
+          "クロスプラットフォームサポート"
+        ],
+        "animationUrl": "https://lottie.host/c6bf9ec8-6b66-4cd4-946b-9aa66b580f51/2HTZVjVwBI.json",
+        "button": "もっと見る"
+      },
+      {
+        "title": "カスタムソフトウェア開発",
+        "description": "ビジネスニーズに合わせたオーダーメイドソフトウェア。",
+        "features": [
+          "完全なカスタマイズ",
+          "保証されたスケーラビリティ",
+          "専用サポート",
+          "柔軟な統合"
+        ],
+        "animationUrl": "https://lottie.host/bf0afe68-5ad4-4fc1-91e1-44270163d284/b8F57gUDTT.json",
+        "button": "もっと見る"
+      },
+      {
+        "title": "電子請求書発行",
+        "description": "安全で使いやすい電子請求システム。",
+        "features": [
+          "規制準拠",
+          "ERP統合",
+          "リアルタイムレポート",
+          "安全な保存"
+        ],
+        "animationUrl": "https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json",
+        "button": "もっと見る"
+      }
+    ]
+  },
+  "plans": {
+    "economic": "経済プラン - ウェブページデザイン",
+    "business": "ビジネスプラン - ウェブページデザイン",
+    "corporate": "法人プラン - ウェブページデザイン",
+    "price": "/一括払い",
+    "features": {
+      "responsiveDesign": "モバイル対応ウェブデザイン",
+      "freeHosting": "1年間の無料ホスティング",
+      "domain": "ドメイン",
+      "ssl": "SSLセキュリティ証明書",
+      "seo": "基本的なSEO最適化",
+      "socialMedia": "ソーシャルメディアリンク",
+      "individualConfig": "個別設定",
+      "noSetup": "初期費用・隠れた費用なし",
+      "teamSize": "チーム規模",
+      "premiumSupport": "プレミアムサポート",
+      "freeUpdates": "無料アップデート"
+    },
+    "button": "リクエスト"
+  },
+  "storeModal": {
+    "title": "バーチャルストア",
+    "plans": {
+      "price": "/月",
+      "button": "リクエスト",
+      "economic": {
+        "name": "エコノミープラン - Ecommerce",
+        "features": [
+          "個別設定",
+          "インストール費用なし",
+          "チームサイズ: 10 人の開発者",
+          "プレミアムサポート: 24 ヶ月",
+          "無料アップデート: 24 ヶ月"
+        ]
+      },
+      "business": {
+        "name": "ビジネスプラン - Ecommerce",
+        "features": [
+          "個別設定",
+          "隠れた費用なし",
+          "20 人の開発者チーム",
+          "プレミアムサポート: 36 ヶ月",
+          "無料アップデート: 36 ヶ月"
+        ]
+      },
+      "corporate": {
+        "name": "コーポレートプラン - Ecommerce",
+        "features": [
+          "高度な設定",
+          "企業統合",
+          "無制限の開発者チーム",
+          "プレミアムサポート: 48 ヶ月",
+          "無料アップデート: 48 ヶ月",
+          "追加の排他的機能"
+        ]
+      }
+    }
+  },
+  "steps": {
+    "aboutUs": "私たちについて",
+    "boostBusiness": "あなたのビジネスを促進します",
+    "brandFocus": "クライアントのブランドを理解し、次のレベルへと導くことに注力します。",
+    "mission": "JESACデジタルは、最高のツールを使用してクライアントに即時の結果を提供することを主な使命として生まれました。",
+    "contact": "お問い合わせ",
+    "analysisPlanning": {
+      "title": "分析と計画",
+      "description": "必要な情報を取得した後、それに応じたソリューションを計画・設計します。"
+    },
+    "developmentDesign": {
+      "title": "開発とデザイン",
+      "description": "すべてを実装し、プロジェクトに最適なテクノロジーを使用してソリューションを構築します。"
+    },
+    "resultsDelivery": {
+      "title": "結果と納品",
+      "description": "最終的に、ソリューションは（品質基準に基づいて）テストされ、合格した場合、製品が提供されます。"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "私たちはあなたの成功の一部になり、あなたの会社を未踏のレベルに引き上げたいと考えています。",
+    "form": {
+      "contact": "連絡先",
+      "name": "名前",
+      "phone": "電話",
+      "email": "メール",
+      "title": "タイトル",
+      "message": "メッセージ",
+      "submit": "送信"
+    }
+  }
+}

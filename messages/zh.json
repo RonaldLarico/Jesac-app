@@ -1,0 +1,201 @@
+{
+  "home": {
+    "logo": "Logozh"
+  },
+  "common": {
+    "logo": "Logotipozh"
+  },
+  "banner": {
+    "title": "软件开发",
+    "animatedText": {
+      "text1": "高水平网页设计。",
+      "text2": "智能聊天机器人设计。",
+      "text3": "定制软件开发。"
+    },
+    "typedText": {
+      "text1": "冶金",
+      "text2": "软件",
+      "text3": "行业"
+    },
+    "contactButton": "联系"
+  },
+  "sidebar": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于我们",
+    "contact": "联系方式",
+    "metal": "冶金",
+    "lightMode": "浅色模式",
+    "darkMode": "深色模式",
+    "logout": "退出"
+  },
+  "services": {
+    "title": "为像您这样的商务团队设计",
+    "description": "我们专注于技术、创新和资本能够释放长期价值的市场。",
+    "cards": [
+      {
+        "title": "网页设计",
+        "description": "提供现代且有吸引力的网页设计和高级支持。",
+        "features": [
+          "吸引力设计",
+          "加载速度快",
+          "永久支持",
+          "高级安全性",
+          "专业性保证"
+        ],
+        "animationUrl": "https://lottie.host/2dbfa366-3a9a-400a-814a-4798841e4e65/9A736dlnR4.json",
+        "button": "查看更多"
+      },
+      {
+        "title": "虚拟商店 (电子商务)",
+        "description": "可管理并适配移动设备的商店。",
+        "features": [
+          "响应式设计",
+          "产品目录",
+          "易于管理",
+          "安全集成"
+        ],
+        "animationUrl": "https://lottie.host/6f34b08d-de64-41c5-be3c-91bd2570a53c/JYm2npElST.json",
+        "button": "查看更多"
+      },
+      {
+        "title": "智能AI聊天机器人",
+        "description": "个性化的AI集成聊天机器人。",
+        "features": [
+          "快速响应",
+          "社交媒体集成",
+          "全天候支持",
+          "高级自动化"
+        ],
+        "animationUrl": "https://lottie.host/bc1995c9-cada-46a8-b22e-9a9a32f806ee/axb3bpv8Wi.json",
+        "button": "查看更多"
+      },
+      {
+        "title": "移动应用开发",
+        "description": "为iOS和Android提供快速且安全的应用程序。",
+        "features": [
+          "直观界面",
+          "高性能",
+          "实时更新",
+          "跨平台支持"
+        ],
+        "animationUrl": "https://lottie.host/c6bf9ec8-6b66-4cd4-946b-9aa66b580f51/2HTZVjVwBI.json",
+        "button": "查看更多"
+      },
+      {
+        "title": "定制软件开发",
+        "description": "根据您的业务需求量身定制的软件。",
+        "features": [
+          "完全定制",
+          "可扩展性保证",
+          "专属支持",
+          "灵活集成"
+        ],
+        "animationUrl": "https://lottie.host/bf0afe68-5ad4-4fc1-91e1-44270163d284/b8F57gUDTT.json",
+        "button": "查看更多"
+      },
+      {
+        "title": "电子发票系统",
+        "description": "安全且易用的电子发票系统。",
+        "features": [
+          "符合规范",
+          "ERP集成",
+          "实时报告",
+          "安全存储"
+        ],
+        "animationUrl": "https://lottie.host/e31f16e6-eab4-41bd-a6ea-6cebbaadd152/H54j2VnoVF.json",
+        "button": "查看更多"
+      }
+    ]
+  },
+  "plans": {
+    "economic": "经济计划 - 网页设计",
+    "business": "商业计划 - 网页设计",
+    "corporate": "企业计划 - 网页设计",
+    "price": "/一次性付款",
+    "features": {
+      "responsiveDesign": "适用于移动设备的响应式网页设计",
+      "freeHosting": "1年免费托管",
+      "domain": "域名",
+      "ssl": "SSL安全证书",
+      "seo": "基础SEO优化",
+      "socialMedia": "社交媒体链接",
+      "individualConfig": "个性化配置",
+      "noSetup": "无设置费或隐藏费用",
+      "teamSize": "团队规模",
+      "premiumSupport": "高级支持",
+      "freeUpdates": "免费更新"
+    },
+    "button": "请求"
+  },
+  "storeModal": {
+    "title": "虚拟商店",
+    "plans": {
+      "price": "/月",
+      "button": "申请",
+      "economic": {
+        "name": "经济计划 - 电子商务",
+        "features": [
+          "个性化配置",
+          "无安装费用",
+          "团队规模：10 名开发人员",
+          "高级支持：24 个月",
+          "免费更新：24 个月"
+        ]
+      },
+      "business": {
+        "name": "商业计划 - 电子商务",
+        "features": [
+          "个性化配置",
+          "无隐藏费用",
+          "20 名开发人员团队",
+          "高级支持：36 个月",
+          "免费更新：36 个月"
+        ]
+      },
+      "corporate": {
+        "name": "企业计划 - 电子商务",
+        "features": [
+          "高级配置",
+          "企业集成",
+          "无限开发人员团队",
+          "高级支持：48 个月",
+          "免费更新：48 个月",
+          "独家附加功能"
+        ]
+      }
+    }
+  },
+  "steps": {
+    "aboutUs": "关于我们",
+    "boostBusiness": "我们助力您的业务",
+    "brandFocus": "我们专注于了解客户的品牌，并将其提升到更高的水平。",
+    "mission": "JESAC数字的主要使命是使用最好的工具为客户提供即时的成果。",
+    "contact": "联系",
+    "analysisPlanning": {
+      "title": "分析与规划",
+      "description": "在获得必要的信息后，我们将根据您的需求进行方案的规划与设计。"
+    },
+    "developmentDesign": {
+      "title": "开发与设计",
+      "description": "我们将实施所有内容，并使用最适合您项目的技术来构建解决方案。"
+    },
+    "resultsDelivery": {
+      "title": "结果与交付",
+      "description": "最后，解决方案将根据质量标准进行测试，若通过测试，产品将交付给您。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "我们希望成为您成功的一部分，并将您的公司带到前所未有的高度。",
+    "form": {
+      "contact": "联系",
+      "name": "姓名",
+      "phone": "电话",
+      "email": "电子邮件",
+      "title": "标题",
+      "message": "消息",
+      "submit": "发送"
+    }
+  }
+}
