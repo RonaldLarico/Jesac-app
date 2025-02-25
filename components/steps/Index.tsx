@@ -17,7 +17,7 @@ const Steps = () => {
         <m.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false, amount: 0.05 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}
           className="grid lg:grid-cols-2 grid-cols-1 max-w-screen-xl mx-auto h-auto"
@@ -42,7 +42,7 @@ const Steps = () => {
           <m.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.05 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             variants={{ hidden: { opacity: 0, x: 300 }, visible: { opacity: 1, x: 0 } }}
             className="p-6 mt-24 text-gray-600 dark:text-gray-300 tracking-wide"
@@ -67,7 +67,7 @@ const Steps = () => {
             className="lg:p-0 p-4 mt-20"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.05 }}
             transition={{ staggerChildren: 0.2, duration: 0.5, ease: "easeOut" }}
           >
             {["analysisPlanning", "developmentDesign", "resultsDelivery"].map((step, idx) => (
@@ -77,7 +77,7 @@ const Steps = () => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.2 }}
+                viewport={{ once: false, amount: 0.05 }}
                 variants={{ hidden: { opacity: 0, x: -300 }, visible: { opacity: 1, x: 0 } }}
                 className={`flex flex-row border shadow-lg rounded-3xl p-4 mb-20 ${
                   idx === 0
@@ -135,8 +135,8 @@ const Steps = () => {
           <m.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.05 }}
             className="flex items-center justify-center p-6"
           >
             <lottie-player

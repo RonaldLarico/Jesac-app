@@ -93,8 +93,33 @@ const Services = () => {
                     transition: { duration: 0.4, delay: 0.1 },
                   },
                 }}
-                className="flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center dark:bg-orange-50 bg-sky-900 shadow-2xl rounded-3xl xl:p-8"
+                className="relative flex flex-col items-center justify-center max-w-lg p-6 mx-auto text-center shadow-2xl rounded-3xl xl:p-8 
+                            dark:bg-orange-50 bg-sky-900 overflow-hidden"
               >
+                {/* <m.div
+                  className="
+    absolute inset-0 rounded-3xl
+    bg-[linear-gradient(135deg,_#2973B2,_#48A6A7,_#F05A7E,_#9ACBD0)]
+    dark:bg-[linear-gradient(135deg,_#FFBE98,_#F05A7E,_#FFBE98,_#F05A7E)]
+  "
+                  style={{ backgroundSize: "300% 300%" }}
+                  initial={{ backgroundPosition: "0% 50%" }}
+                  animate={{
+                    backgroundPosition: [
+                      "0% 50%",
+                      "50% 25%",
+                      "100% 50%",
+                      "50% 75%",
+                      "0% 50%",
+                    ],
+                  }}
+                  transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                /> */}
+
                 <m.div
                   initial="hidden"
                   whileInView="visible"
@@ -145,11 +170,11 @@ const Services = () => {
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.1, margin: "-10%" }}
                         variants={{
-                          hidden: { opacity: 0, x: -10 },
+                          hidden: { opacity: 0, x: -50 },
                           visible: {
                             opacity: 1,
                             x: 0,
-                            transition: { duration: 0.3, delay: idx * 0.1 },
+                            transition: { duration: 0.5, delay: idx * 0.1 },
                           },
                         }}
                         className="py-2 border-b w-full"
